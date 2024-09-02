@@ -1,0 +1,35 @@
+@{
+    ViewBag.Title = "Test Linhas";
+    Layout = null; // Se não precisar de layout
+}
+
+<h2>Testando Linhas</h2>
+
+@{
+    Console.WriteLine("----------------------------- EXECUTANDO GetTest --------------------------------");
+    var apiController = new HumbertoMVC.Controllers.ApiController();
+    //var linhasController = new HumbertoMVC.Controllers.LinhaContoller();
+    apiController.PostAuthenticator();
+    //var result = linhasController.GetBusca().Result;
+
+}
+
+
+@{
+    //todo apagar APENAS o @{ } mantenha o cogigo após arrumar os erros de autenticação do cogido;
+    
+    /*<div> 
+        @if (result != null)
+        {
+            <p>Test Passed!</p>
+            <!-- Exibir os dados retornados, por exemplo: -->
+            <p>@result.ToString()</p>
+        }
+        else
+        {
+            <p>Test Failed!</p>
+        }
+    </div>*/
+    
+    
+}
