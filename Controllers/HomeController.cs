@@ -22,6 +22,11 @@ public class HomeController : Controller
     {
         return View();
     }
+    
+    public IActionResult GetPosicaoTeste() //TODO: APAGAR
+    {
+        return View();
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
