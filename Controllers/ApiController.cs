@@ -20,12 +20,12 @@ public class ApiController : Controller
         
         if (authenticated)
         {
-            Console.WriteLine("Autenticado");
+            Console.WriteLine("  * Autenticado Com Sucesso");
             return Ok("Autenticado com sucesso!");
         }
         else
         {
-            return Unauthorized("Falha na autenticação.");
+            return Unauthorized("  * Falha na autenticação. * ");
         }
     }
 }

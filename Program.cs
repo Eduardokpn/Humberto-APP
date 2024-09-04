@@ -25,3 +25,15 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(
+        "AllowSpecificOrigin",
+        builder =>
+        {
+            builder.WithOrigins("https://localhost:44336").AllowAnyHeader().AllowAnyMethod();
+        }
+    );
+});
+app.UseCors("AllowSpecificOrigin");

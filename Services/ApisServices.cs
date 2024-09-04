@@ -11,25 +11,35 @@ public class ApiService
     public ApiService() //recebe o url base da api
     {
         Console.WriteLine("----------------------------- EXECUTANDO API --------------------------------");
+        Console.WriteLine("-------------------------------- Aguarde ------------------------------------");
         _httpClient = new HttpClient
         {
-            BaseAddress = new Uri("http://api.olhovivo.sptrans.com.br/v2.1")
+            //BaseAddress = new Uri("http://api.olhovivo.sptrans.com.br/v2.1")
+            BaseAddress = new Uri("http://api.olhovivo.sptrans.com.br")
+            /*
+             * Eu não sei o porque mas o BaseAdress vai ignorar tudo que voce coloque após ".com.br"
+             * então só vai funcionar se vocÊ fizer exatamente como está no codigo, talvez no futuro eu resolva isso
+             * mas por enquanto coloque o "v2.1/" junto ao endpoint,
+             * mesmo que a api do olho vivo esteja mandando colocar a versão junto ao endereço base, ignore.
+             * A documentação não sabe o que está dizendo e não funciona de outra forma
+             * ACREDITE EU JA TENTEI TODAS AS OUTRAS
+             */
         };
     }
 
     public async Task<bool> PostAuthenticateAsync(string token) //Autentica com o token
     {
-        var requestUrl = _httpClient.BaseAddress + "/Login/Autenticar?token=" + token;
-        Console.WriteLine($"Requisição URL: {requestUrl}");
-        
-        
-
+        Console.WriteLine("---------------------------- Tentando Autenticar ---------------------------");
+        //var requestUrl = _httpClient.BaseAddress + $"/Login/Autenticar?token={token}";
         try
         {
-            string url = await _httpClient.GetStringAsync("/Login/Autenticar?token={token}");
-            var response = await _httpClient.PostAsync("/Login/Autenticar?token=" + token, null);
+            //var response = await _httpClient.PostAsync($"/Login/Autenticar?token={token}", null);
+            var response = await _httpClient.PostAsync($"v2.1/Login/Autenticar?token={token}", null);
             
-            if (response.IsSuccessStatusCode)
+            var responseContent = await response.Content.ReadAsStringAsync();
+            bool isBodyTrue = responseContent.Contains("true", StringComparison.OrdinalIgnoreCase);
+
+            if (response.IsSuccessStatusCode || isBodyTrue)
             {
                 _isAuthenticated = true;
                 return true; // Autenticação bem-sucedida
@@ -37,10 +47,11 @@ public class ApiService
             else
             {
                 // Escreve a mensagem de erro no console
-                var errorMessage = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"*****Erro na autenticação: {response.StatusCode} - {errorMessage}");
+                Console.WriteLine($"*****Erro na autenticação: {response.StatusCode} - {responseContent}");
                 Console.WriteLine("-----------------------------//------------------------------------");
-                Console.WriteLine("URL AUTENTICATOR É: " + response);
+                Console.WriteLine("URL AUTENTICATOR É: " + response.RequestMessage.RequestUri);
+                Console.WriteLine("-----------------------------//------------------------------------");
+                Console.WriteLine($"O retorno do body é: {isBodyTrue}");
                 return false; // Falha na autenticação
             }
         }
@@ -60,4 +71,6 @@ public class ApiService
 
         return await response.Content.ReadAsStringAsync();
     }
+    
+    
 }
