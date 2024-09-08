@@ -1,36 +1,27 @@
-@{
-    ViewBag.Title = "Test Linhas";
-    Layout = null; // Se não precisar de layout
-}
-
-<h2>Testando Linhas</h2>
+@model HumbertoMVC.Models.linhas
 
 @{
-    Console.WriteLine("--------------------------- EXECUTANDO TESTES ------------------------------");
-    Console.WriteLine("--------------------------- EXECUTANDO TESTES ------------------------------");
-    var apiController = new HumbertoMVC.Controllers.ApiController();
-    //var linhasController = new HumbertoMVC.Controllers.LinhaContoller();
-    apiController.PostAuthenticator();
-    //var result = linhasController.GetBusca().Result;
-
+    ViewBag.Title = "Detalhes da Linha";
 }
 
+<h2>Detalhes da Linha</h2>
 
-@{
-    //todo apagar APENAS o @{ } mantenha o cogigo após arrumar os erros de autenticação do cogido;
-    
-    /*<div> 
-        @if (result != null)
-        {
-            <p>Test Passed!</p>
-            <!-- Exibir os dados retornados, por exemplo: -->
-            <p>@result.ToString()</p>
-        }
-        else
-        {
-            <p>Test Failed!</p>
-        }
-    </div>*/
-    
-    
-}
+<div>
+    @if (Model != null)
+    {
+    <p><strong>Test Passed!</strong></p>
+    <ul>
+        <li><strong>Código Identificador (cl):</strong> @Model.cl</li>
+        <li><strong>É Circular (lc):</strong> @(Model.lc ? "Sim" : "Não")</li>
+        <li><strong>Letreiro Numérico Parte 1 (sl):</strong> @Model.sl</li>
+        <li><strong>Letreiro Numérico Parte 2 (tl):</strong> @Model.tl</li>
+        <li><strong>Sentido de Operação (tp):</strong> @Model.tp</li>
+        <li><strong>Letreiro Descritivo (ts):</strong> @Model.ts</li>
+    </ul>
+    }
+    else
+    {
+    <p><strong>Test Failed!</strong> Nenhuma informação foi encontrada.</p>
+    }
+</div>
+

@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Identity;
+
 namespace HumbertoMVC.Models;
 
 using System.Net.Http;
@@ -6,8 +8,9 @@ using System.Threading.Tasks;
 public class ApiService
 {
     private readonly HttpClient _httpClient;
-    private bool _isAuthenticated = false; // Verifica se está autenticado com o Token  
+    private bool _isAuthenticated = false; //vai verificar se está autenticado com o Token  
 
+    
     public ApiService() //recebe o url base da api
     {
         Console.WriteLine("----------------------------- EXECUTANDO API --------------------------------");
@@ -15,7 +18,9 @@ public class ApiService
         _httpClient = new HttpClient
         {
             //BaseAddress = new Uri("http://api.olhovivo.sptrans.com.br/v2.1")
+            
             BaseAddress = new Uri("http://api.olhovivo.sptrans.com.br")
+            
             /*
              * Eu não sei o porque mas o BaseAdress vai ignorar tudo que voce coloque após ".com.br"
              * então só vai funcionar se vocÊ fizer exatamente como está no codigo, talvez no futuro eu resolva isso
@@ -30,7 +35,7 @@ public class ApiService
     public async Task<bool> PostAuthenticateAsync(string token) //Autentica com o token
     {
         Console.WriteLine("---------------------------- Tentando Autenticar ---------------------------");
-        //var requestUrl = _httpClient.BaseAddress + $"/Login/Autenticar?token={token}";
+        
         try
         {
             //var response = await _httpClient.PostAsync($"/Login/Autenticar?token={token}", null);
@@ -39,9 +44,10 @@ public class ApiService
             var responseContent = await response.Content.ReadAsStringAsync();
             bool isBodyTrue = responseContent.Contains("true", StringComparison.OrdinalIgnoreCase);
 
-            if (response.IsSuccessStatusCode || isBodyTrue)
+            if (isBodyTrue)
             {
                 _isAuthenticated = true;
+                Console.WriteLine("Retorno da autenticação na ApiServices: " + responseContent);
                 return true; // Autenticação bem-sucedida
             }
             else
@@ -63,11 +69,13 @@ public class ApiService
         }
     }
     
+    
+    
     public async Task<string> GetAsync(string endpoint) //recebe o endpoint da api para getAsync
     {
         
         var response = await _httpClient.GetAsync(endpoint);
-        response.EnsureSuccessStatusCode(); // Garante que o status da resposta foi 200-299
+        //response.EnsureSuccessStatusCode(); // Garante que o status da resposta foi 200-299
 
         return await response.Content.ReadAsStringAsync();
     }

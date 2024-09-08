@@ -20,7 +20,7 @@ public class ApiController : Controller
         
         if (authenticated)
         {
-            Console.WriteLine("  * Autenticado Com Sucesso");
+            Console.WriteLine($"  * Autenticado Com Sucesso na Api Controller - {authenticated}");
             return Ok("Autenticado com sucesso!");
         }
         else
@@ -28,4 +28,5 @@ public class ApiController : Controller
             return Unauthorized("  * Falha na autenticação. * ");
         }
     }
+    
 }

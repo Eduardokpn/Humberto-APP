@@ -1,7 +1,24 @@
+using HumbertoMVC.Models;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Adiciona o HttpClient e registra o ApiService
+builder.Services.AddHttpClient<ApiService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Configura o CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(
+        "AllowSpecificOrigin",
+        builder =>
+        {
+            builder.WithOrigins("https://localhost:44336").AllowAnyHeader().AllowAnyMethod();
+        }
+    );
+});
 
 var app = builder.Build();
 
@@ -18,6 +35,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseCors("AllowSpecificOrigin");
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
@@ -25,15 +44,3 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(
-        "AllowSpecificOrigin",
-        builder =>
-        {
-            builder.WithOrigins("https://localhost:44336").AllowAnyHeader().AllowAnyMethod();
-        }
-    );
-});
-app.UseCors("AllowSpecificOrigin");
