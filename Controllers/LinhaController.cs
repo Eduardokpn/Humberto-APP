@@ -12,9 +12,9 @@ namespace HumbertoMVC.Controllers
         private readonly ApiService _apiService;
         
 
-        public LinhaController()
+        public LinhaController(ApiService apiService)
         {
-            _apiService = new ApiService(); // Instancia o services
+            _apiService = apiService; // Instancia o services
            
         }
         
@@ -23,17 +23,10 @@ namespace HumbertoMVC.Controllers
         {
             try
             {
-                var apiControllerAuth = await new ApiController().PostAuthenticator(); // Autenticar
-                if (!(apiControllerAuth is OkObjectResult))
-                {
-                    Console.WriteLine($"verifique o erro: {apiControllerAuth}");
-                    return BadRequest("Falha na autenticação");
-                }
-        
-                Console.WriteLine($" * Retorno Autenticação GetLinha: {apiControllerAuth}");
+               // Console.WriteLine($" * Retorno Autenticação GetLinha: {apiControllerAuth}");
                 
                 // Define o endpoint específico para a requisição 
-                var jsonResponse = await _apiService.GetAsync("v2.1/Linha/Buscar?termosBusca=800");
+                var jsonResponse = await _apiService.GetAsync("v2.1/Linha/Buscar?termosBusca=Lapa", "fd910c4ffe48e5d1c2f50960882fcdc8e2b8f73c4d58defd26e4b2bf9a8cd4e3");
                 Console.WriteLine($"Resposta da API: {jsonResponse}");
                 // Deserializa a resposta JSON
                 var linha = JsonConvert.DeserializeObject<linhas>(jsonResponse);

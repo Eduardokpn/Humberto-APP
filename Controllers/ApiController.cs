@@ -7,9 +7,9 @@ public class ApiController : Controller
 {
     private readonly ApiService _apiService;
 
-    public ApiController()
+    public ApiController(ApiService apiService)
     {
-        _apiService = new ApiService(); // Instancia uma nova api service
+        _apiService = apiService; // Instancia uma nova api service
     }
     
     public async Task<IActionResult> PostAuthenticator() 
