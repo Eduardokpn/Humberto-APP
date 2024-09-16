@@ -1,4 +1,4 @@
-@model HumbertoMVC.Models.linhas
+@model List<HumbertoMVC.Models.linhasModel>
 
 @{
     ViewBag.Title = "Detalhes da Linha";
@@ -9,15 +9,33 @@
 <div>
     @if (Model != null)
     {
-    <p><strong>Test Passed!</strong></p>
-    <ul >
-        <li><strong>Código Identificador (cl):</strong> @Model.cl</li>
-        <li><strong>É Circular (lc):</strong> @(Model.lc ? "Sim" : "Não")</li>
-        <li><strong>Letreiro Numérico Parte 1 (sl):</strong> @Model.sl</li>
-        <li><strong>Letreiro Numérico Parte 2 (tl):</strong> @Model.tl</li>
-        <li><strong>Sentido de Operação (tp):</strong> @Model.tp</li>
-        <li><strong>Letreiro Descritivo (ts):</strong> @Model.ts</li>
-    </ul>
+        <table class="table">
+    <thead>
+        <tr>
+            <th>Código da Linha</th>
+            <th>Em Circulação</th>
+            <th>Letreiro</th>
+            <th>Sentido</th>
+            <th>Tipo de Linha</th>
+            <th>Terminal Principal</th>
+            <th>Terminal Secundário</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var linha in Model)
+        {
+            <tr>
+                <td>@linha.Cl</td>
+                <td>@linha.Lc</td>
+                <td>@linha.Lt</td>
+                <td>@linha.Sl</td>
+                <td>@linha.Tl</td>
+                <td>@linha.Tp</td>
+                <td>@linha.Ts</td>
+            </tr>
+        }
+    </tbody>
+</table>
     }
     else
     {

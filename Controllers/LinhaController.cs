@@ -18,19 +18,15 @@ namespace HumbertoMVC.Controllers
            
         }
         
+        [HttpGet]
         [Route("/Home/GetPosicaoTeste")]
         public async Task<IActionResult> GetBusca() 
         {
             try
             {
-               // Console.WriteLine($" * Retorno Autenticação GetLinha: {apiControllerAuth}");
-                
                 // Define o endpoint específico para a requisição 
-                var jsonResponse = await _apiService.GetAsync("v2.1/Linha/Buscar?termosBusca=Lapa", "fd910c4ffe48e5d1c2f50960882fcdc8e2b8f73c4d58defd26e4b2bf9a8cd4e3");
-                Console.WriteLine($"Resposta da API: {jsonResponse}");
-                // Deserializa a resposta JSON
-                var linha = JsonConvert.DeserializeObject<linhas>(jsonResponse);
-
+                var linha = await _apiService.GetLinhasListAsync("v2.1/Linha/Buscar?termosBusca=Tucuruvi", "fd910c4ffe48e5d1c2f50960882fcdc8e2b8f73c4d58defd26e4b2bf9a8cd4e3");
+              
                 // Passa os dados para a View
                 return View("~/Views/Home/GetPosicaoTeste.cshtml", linha);  // Aqui você passa o modelo para a View retonando para o GetPosicaoTeste
             }

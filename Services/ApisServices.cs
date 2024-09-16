@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace HumbertoMVC.Models;
 
@@ -27,14 +29,13 @@ public class ApiService
          */
     }
     
-
+    [HttpPost]
     public async Task<bool> PostAuthenticateAsync(string token) //Autentica com o token
     {
         Console.WriteLine("---------------------------- Tentando Autenticar ---------------------------");
         
         try
         {
-            //var response = await _httpClient.PostAsync($"/Login/Autenticar?token={token}", null);
             var response = await _httpClient.PostAsync($"v2.1/Login/Autenticar?token={token}", null);
             
             var responseContent = await response.Content.ReadAsStringAsync();
@@ -66,15 +67,21 @@ public class ApiService
     }
     
     
-    
-    public async Task<string> GetAsync(string endpoint, string token) //recebe o endpoint da api para getAsync
+    [HttpGet]
+    public async Task<string> GetAsync(string endpoint, string token) //Get Asyncrono
     {
         await _httpClient.PostAsync($"v2.1/Login/Autenticar?token={token}", null);
         var response = await _httpClient.GetAsync(endpoint);
-        //response.EnsureSuccessStatusCode(); // Garante que o status da resposta foi 200-299
 
         return await response.Content.ReadAsStringAsync();
     }
     
+       public async Task<List<linhasModel>> GetLinhasListAsync(string endpoint, string token) //GetLinhaListAsync
+        {
+            await _httpClient.PostAsync($"v2.1/Login/Autenticar?token={token}", null);
+            var response = await _httpClient.GetStringAsync(endpoint);
+            var linhas = JsonConvert.DeserializeObject<List<linhasModel>>(response);
+            return linhas;
+        }
     
 }
