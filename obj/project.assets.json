@@ -57,11 +57,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Humberto-APP\\HumbertoMVC.csproj",
+      "projectUniqueName": "D:\\TCC\\Humberto-APP\\HumbertoMVC.csproj",
       "projectName": "HumbertoMVC",
-      "projectPath": "D:\\Humberto-APP\\HumbertoMVC.csproj",
+      "projectPath": "D:\\TCC\\Humberto-APP\\HumbertoMVC.csproj",
       "packagesPath": "C:\\Users\\Androw\\.nuget\\packages\\",
-      "outputPath": "D:\\Humberto-APP\\obj\\",
+      "outputPath": "D:\\TCC\\Humberto-APP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Androw\\AppData\\Roaming\\NuGet\\NuGet.Config",

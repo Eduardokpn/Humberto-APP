@@ -76,9 +76,9 @@ public class ApiService
         return await response.Content.ReadAsStringAsync();
     }
     
-       public async Task<List<linhasModel>> GetLinhasListAsync(string endpoint, string token) //GetLinhaListAsync
+       public async Task<List<linhasModel>> GetLinhasListAsync(string endpoint) //GetLinhaListAsync
         {
-            await _httpClient.PostAsync($"v2.1/Login/Autenticar?token={token}", null);
+            //await _httpClient.PostAsync($"v2.1/Login/Autenticar?token={token}", null);
             var response = await _httpClient.GetStringAsync(endpoint);
             var linhas = JsonConvert.DeserializeObject<List<linhasModel>>(response);
             return linhas;

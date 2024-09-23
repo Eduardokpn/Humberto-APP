@@ -16,6 +16,7 @@ namespace HumbertoMVC.Controllers
         {
             _apiService = apiService; // Instancia o services
            
+           
         }
         
         [HttpGet]
@@ -24,8 +25,9 @@ namespace HumbertoMVC.Controllers
         {
             try
             {
+                
                 // Define o endpoint específico para a requisição 
-                var linha = await _apiService.GetLinhasListAsync("v2.1/Linha/Buscar?termosBusca=Tucuruvi", "fd910c4ffe48e5d1c2f50960882fcdc8e2b8f73c4d58defd26e4b2bf9a8cd4e3");
+                var linha = await _apiService.GetLinhasListAsync("v2.1/Linha/Buscar?termosBusca=Tucuruvi");
               
                 // Passa os dados para a View
                 return View("~/Views/Home/GetPosicaoTeste.cshtml", linha);  // Aqui você passa o modelo para a View retonando para o GetPosicaoTeste

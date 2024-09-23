@@ -11,7 +11,9 @@ public class ApiController : Controller
     {
         _apiService = apiService; // Instancia uma nova api service
     }
-    
+
+    [HttpGet]
+    [Route("/Home/Autenticate")]
     public async Task<IActionResult> PostAuthenticator() 
     {   
         // Autentica na API usando o token fornecido
