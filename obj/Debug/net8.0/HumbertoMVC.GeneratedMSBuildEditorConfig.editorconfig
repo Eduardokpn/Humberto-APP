@@ -18,16 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\TCC\Humberto-APP
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/TCC/Humberto-APP/Views/Home/GetPosicaoTeste.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRQb3NpY2FvVGVzdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/TCC/Humberto-APP/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/TCC/Humberto-APP/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TCC/Humberto-APP/Views/Home/TestesApi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXN0ZXNBcGkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/TCC/Humberto-APP/Views/Shared/Error.cshtml]

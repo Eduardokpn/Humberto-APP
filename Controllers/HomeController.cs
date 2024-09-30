@@ -23,7 +23,7 @@ public class HomeController : Controller
         return View();
     }
     
-    public IActionResult GetPosicaoTeste() //TODO: APAGAR
+    public IActionResult TestesApi() //TODO: APAGAR
     {
         return View();
     }

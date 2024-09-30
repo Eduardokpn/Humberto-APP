@@ -19,14 +19,6 @@ public class ApiService
         _httpClient.BaseAddress = new Uri("http://api.olhovivo.sptrans.com.br");
         Console.WriteLine("----------------------------- EXECUTANDO API --------------------------------");
         
-        /*
-         * Eu não sei o porque mas o BaseAdress vai ignorar tudo que voce coloque após ".com.br"
-         * então só vai funcionar se vocÊ fizer exatamente como está no codigo, talvez no futuro eu resolva isso
-         * mas por enquanto coloque o "v2.1/" junto ao endpoint,
-         * mesmo que a api do olho vivo esteja mandando colocar a versão junto ao endereço base, ignore.
-         * A documentação não sabe o que está dizendo e não funciona de outra forma
-         * ACREDITE EU JA TENTEI TODAS AS OUTRAS
-         */
     }
     
     [HttpPost]
@@ -70,7 +62,6 @@ public class ApiService
     [HttpGet]
     public async Task<string> GetAsync(string endpoint, string token) //Get Asyncrono
     {
-        await _httpClient.PostAsync($"v2.1/Login/Autenticar?token={token}", null);
         var response = await _httpClient.GetAsync(endpoint);
 
         return await response.Content.ReadAsStringAsync();
@@ -78,7 +69,6 @@ public class ApiService
     
        public async Task<List<linhasModel>> GetLinhasListAsync(string endpoint) //GetLinhaListAsync
         {
-            //await _httpClient.PostAsync($"v2.1/Login/Autenticar?token={token}", null);
             var response = await _httpClient.GetStringAsync(endpoint);
             var linhas = JsonConvert.DeserializeObject<List<linhasModel>>(response);
             return linhas;

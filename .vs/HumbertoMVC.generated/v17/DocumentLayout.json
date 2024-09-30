@@ -1,12 +1,138 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Humberto-APP\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\TCC\\Humberto-APP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{75A07AD9-F038-4749-83E7-74CB5F17B8D7}|HumbertoMVC.csproj|d:\\tcc\\humberto-app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75A07AD9-F038-4749-83E7-74CB5F17B8D7}|HumbertoMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75A07AD9-F038-4749-83E7-74CB5F17B8D7}|HumbertoMVC.csproj|d:\\tcc\\humberto-app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75A07AD9-F038-4749-83E7-74CB5F17B8D7}|HumbertoMVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75A07AD9-F038-4749-83E7-74CB5F17B8D7}|HumbertoMVC.csproj|d:\\tcc\\humberto-app\\controllers\\linhacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75A07AD9-F038-4749-83E7-74CB5F17B8D7}|HumbertoMVC.csproj|solutionrelative:controllers\\linhacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75A07AD9-F038-4749-83E7-74CB5F17B8D7}|HumbertoMVC.csproj|d:\\tcc\\humberto-app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75A07AD9-F038-4749-83E7-74CB5F17B8D7}|HumbertoMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75A07AD9-F038-4749-83E7-74CB5F17B8D7}|HumbertoMVC.csproj|d:\\tcc\\humberto-app\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75A07AD9-F038-4749-83E7-74CB5F17B8D7}|HumbertoMVC.csproj|solutionrelative:controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75A07AD9-F038-4749-83E7-74CB5F17B8D7}|HumbertoMVC.csproj|d:\\tcc\\humberto-app\\services\\apisservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75A07AD9-F038-4749-83E7-74CB5F17B8D7}|HumbertoMVC.csproj|solutionrelative:services\\apisservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\TCC\\Humberto-APP\\Views\\Home\\GetPosicaoTeste.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Home\\GetPosicaoTeste.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\TCC\\Humberto-APP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\TCC\\Humberto-APP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAB0AAAB8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T20:27:22.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetPosicaoTeste.cshtml",
+              "DocumentMoniker": "D:\\TCC\\Humberto-APP\\Views\\Home\\GetPosicaoTeste.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\GetPosicaoTeste.cshtml",
+              "ToolTip": "D:\\TCC\\Humberto-APP\\Views\\Home\\GetPosicaoTeste.cshtml",
+              "RelativeToolTip": "Views\\Home\\GetPosicaoTeste.cshtml",
+              "ViewState": "AQIAABMAAAAAAAAAAADwvy0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T01:40:14.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\TCC\\Humberto-APP\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\TCC\\Humberto-APP\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T01:28:16.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\TCC\\Humberto-APP\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\TCC\\Humberto-APP\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAiwBkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T19:49:36.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApiController.cs",
+              "DocumentMoniker": "D:\\TCC\\Humberto-APP\\Controllers\\ApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApiController.cs",
+              "ToolTip": "D:\\TCC\\Humberto-APP\\Controllers\\ApiController.cs",
+              "RelativeToolTip": "Controllers\\ApiController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T19:44:14.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApisServices.cs",
+              "DocumentMoniker": "D:\\TCC\\Humberto-APP\\Services\\ApisServices.cs",
+              "RelativeDocumentMoniker": "Services\\ApisServices.cs",
+              "ToolTip": "D:\\TCC\\Humberto-APP\\Services\\ApisServices.cs",
+              "RelativeToolTip": "Services\\ApisServices.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T19:40:08.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LinhaController.cs",
+              "DocumentMoniker": "D:\\TCC\\Humberto-APP\\Controllers\\LinhaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LinhaController.cs",
+              "ToolTip": "D:\\TCC\\Humberto-APP\\Controllers\\LinhaController.cs",
+              "RelativeToolTip": "Controllers\\LinhaController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAD4vyUAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T19:39:53.345Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

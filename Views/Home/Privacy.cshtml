@@ -4,3 +4,15 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
+
+
+
+<!--
+TODO: ISSO É SO PARA LIMPAR O TEMP DATA DURANTE TESTES APAGUE DEPOIS
+-->
+
+@{
+    TempData.Remove("Linhas");
+    Console.WriteLine(TempData["Linhas"]);
+    Console.WriteLine("Tempdata talvez limpo");
+}
