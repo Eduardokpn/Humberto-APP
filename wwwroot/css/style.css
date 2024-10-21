@@ -1,0 +1,112 @@
+﻿
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#reta {
+    margin-top: -15px;
+    padding: 0;
+    width: 100%;
+    height: 350px;
+    background-color: #003acc;
+    justify-content: center;
+    border-radius: 0px 0px 455px 455px;
+    display: flex;
+    flex-direction:column;
+    align-items: center
+    
+}
+
+#quadrado1 {
+    display: flex;
+    width: 293px;
+    height: 195px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: -40px;
+    padding: 2px;
+    flex-direction: column; 
+
+}
+
+#partida {
+    display: flex;
+    width: 277px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #e6e6e6;
+    margin: 7px;
+}
+
+#lI{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#in1 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: -75px;
+}
+
+#final {
+    display: flex;
+    width: 277px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #e6e6e6;
+    margin: 7px;
+    align-items: flex-end;
+}
+
+#lF {
+    font-size: 12px;
+    margin-bottom: 57px;
+    margin-left: 5px
+}
+
+#in2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-left: -55px;
+}
+
+#buttonBuscar {
+    
+    display: flex;
+    width: 228px;
+    height: 65px;
+    border-radius: 10px 10px 80px 80px;
+    background-color: #e6e6e6;
+    margin-top: 15px;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    font-size: 25px;
+    border: none;
+    font-weight: bold
+    
+}
+
+#telas {
+
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 225px;
+
+}
+
+#home {
+    margin: 30px;
+    width: 75px;
+    height: 75px;
+}
+
+#star {
+    margin: 30px;
+    width: 75px;
+    height: 75px;
+}
