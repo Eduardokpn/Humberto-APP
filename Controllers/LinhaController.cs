@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 
 namespace HumbertoMVC.Controllers
-{   
+{
     [ApiController]
     public class LinhaController : Controller
     {
@@ -16,8 +16,7 @@ namespace HumbertoMVC.Controllers
         public LinhaController(ApiService apiService)
         {
             _apiService = apiService; // Instancia o services
-           
-           
+            
         }
 
         #region Pegar Dados (Gets)
@@ -76,7 +75,7 @@ namespace HumbertoMVC.Controllers
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                return StatusCode(500, "Ocorreu um erro ao exibir as linhas");
+                return StatusCode(500, "Ocorreu um erro ao exibir as linhas!");
             }
             
         }

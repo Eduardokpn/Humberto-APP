@@ -67,11 +67,21 @@ public class ApiService
         return await response.Content.ReadAsStringAsync();
     }
     
-       public async Task<List<linhasModel>> GetLinhasListAsync(string endpoint) //GetLinhaListAsync
-        {
-            var response = await _httpClient.GetStringAsync(endpoint);
-            var linhas = JsonConvert.DeserializeObject<List<linhasModel>>(response);
-            return linhas;
-        }
+   public async Task<List<linhasModel>> GetLinhasListAsync(string endpoint) //GetLinhaListAsync
+    {
+        var response = await _httpClient.GetStringAsync(endpoint);
+        var linhas = JsonConvert.DeserializeObject<List<linhasModel>>(response);
+        return linhas;
+    }
+   
+    
+   
+    public async Task<PrevisaoModel> GetPrevisaoAsync(string endpoint)
+    {
+        var response = await _httpClient.GetStringAsync(endpoint);
+        var previsao = JsonConvert.DeserializeObject<PrevisaoModel>(response);
+        return previsao;
+    }
+
     
 }

@@ -14,4 +14,8 @@
     <Folder Include="Views\TesteLinhas\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="Views\Home\arrivalForecastTesteGemini.cshtml" />
+  </ItemGroup>
+
 </Project>
