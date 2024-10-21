@@ -9,39 +9,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HumbertoMVC
 build_property.RootNamespace = HumbertoMVC
-build_property.ProjectDir = C:\Users\eduar\OneDrive\Área de Trabalho\HumbertoMVC\
+build_property.ProjectDir = D:\TCC\Humberto-APP\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\eduar\OneDrive\Área de Trabalho\HumbertoMVC
+build_property.MSBuildProjectDirectory = D:\TCC\Humberto-APP
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/eduar/OneDrive/Área de Trabalho/HumbertoMVC/Views/Home/Index.cshtml]
+[D:/TCC/Humberto-APP/Views/Home/arrivalTest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhcnJpdmFsVGVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TCC/Humberto-APP/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/eduar/OneDrive/Área de Trabalho/HumbertoMVC/Views/Home/Privacy.cshtml]
+[D:/TCC/Humberto-APP/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/eduar/OneDrive/Área de Trabalho/HumbertoMVC/Views/Shared/Error.cshtml]
+[D:/TCC/Humberto-APP/Views/Home/TestesApi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXN0ZXNBcGkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TCC/Humberto-APP/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/eduar/OneDrive/Área de Trabalho/HumbertoMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/TCC/Humberto-APP/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/eduar/OneDrive/Área de Trabalho/HumbertoMVC/Views/_ViewImports.cshtml]
+[D:/TCC/Humberto-APP/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/eduar/OneDrive/Área de Trabalho/HumbertoMVC/Views/_ViewStart.cshtml]
+[D:/TCC/Humberto-APP/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/eduar/OneDrive/Área de Trabalho/HumbertoMVC/Views/Shared/_Layout.cshtml]
+[D:/TCC/Humberto-APP/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-goxzm2nzrx
