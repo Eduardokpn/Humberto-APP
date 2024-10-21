@@ -1,6 +1,6 @@
 using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
 using HumbertoMVC.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HumbertoMVC.Controllers;
 
@@ -22,7 +22,7 @@ public class HomeController : Controller
     {
         return View();
     }
-    
+
     public IActionResult TestesApi() //TODO: APAGAR
     {
         return View();

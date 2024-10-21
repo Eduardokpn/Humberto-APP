@@ -13,10 +13,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy(
         "AllowSpecificOrigin",
-        builder =>
-        {
-            builder.WithOrigins("https://localhost:44336").AllowAnyHeader().AllowAnyMethod();
-        }
+        builder => { builder.WithOrigins("https://localhost:44336").AllowAnyHeader().AllowAnyMethod(); }
     );
 });
 
@@ -26,7 +23,7 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    app.UseHsts();  // Ativa o HSTS para ambientes de produção
+    app.UseHsts(); // Ativa o HSTS para ambientes de produção
 }
 
 app.UseHttpsRedirection();
@@ -39,7 +36,7 @@ app.UseCors("AllowSpecificOrigin");
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    "default",
+    "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

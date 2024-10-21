@@ -1,4 +1,5 @@
 namespace HumbertoMVC.Models;
+
 public class VeiculoModel
 {
     // Letreiro completo da linha
@@ -21,7 +22,7 @@ public class VeiculoModel
 
     // Prefixo do veículo
     public int P { get; set; }
-    
+
     // Horário previsto para chegada do veículo no ponto de parada relacionado
     public string T { get; set; }
 

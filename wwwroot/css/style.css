@@ -1,5 +1,5 @@
 ﻿
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -13,9 +13,9 @@
     justify-content: center;
     border-radius: 0px 0px 455px 455px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center
-    
+
 }
 
 #quadrado1 {
@@ -26,7 +26,7 @@
     background-color: #fff;
     margin-top: -40px;
     padding: 2px;
-    flex-direction: column; 
+    flex-direction: column;
 
 }
 
@@ -39,7 +39,7 @@
     margin: 7px;
 }
 
-#lI{
+#lI {
     font-size: 12px;
     margin-top: 5px;
     margin-left: 5px;
@@ -74,7 +74,7 @@
 }
 
 #buttonBuscar {
-    
+
     display: flex;
     width: 228px;
     height: 65px;
@@ -82,12 +82,12 @@
     background-color: #e6e6e6;
     margin-top: 15px;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     text-align: center;
     font-size: 25px;
     border: none;
     font-weight: bold
-    
+
 }
 
 #telas {
