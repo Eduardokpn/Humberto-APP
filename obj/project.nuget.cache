@@ -1,47 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "rkPZCBSyW6PfJ8Wo6nybY/EuOtFOYe5ChSGIJOxwRGBXsFcpyUve6gWNGyTmDxCX96vcNchW325slz1Z+T/bgA==",
-  "success": false,
-  "projectFilePath": "D:\\TCC\\Humberto-APP\\HumbertoMVC.csproj",
+  "dgSpecHash": "7RxmsZvnN0joAOfN+kvu18w5oIsMXZyTQsIPE/MZhMyUrw5TZA8GoTvNHgp6yqX/svbA7CqcJJ5Nux5Cz1wBgg==",
+  "success": true,
+  "projectFilePath": "D:\\TCC COPIA\\Humberto-APP\\HumbertoMVC.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Androw\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Androw\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.0-rc.2.24473.5\\microsoft.extensions.caching.abstractions.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Androw\\.nuget\\packages\\microsoft.extensions.caching.stackexchangeredis\\9.0.0-rc.2.24474.3\\microsoft.extensions.caching.stackexchangeredis.9.0.0-rc.2.24474.3.nupkg.sha512",
+    "C:\\Users\\Androw\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0-rc.2.24473.5\\microsoft.extensions.dependencyinjection.abstractions.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Androw\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0-rc.2.24473.5\\microsoft.extensions.logging.abstractions.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Androw\\.nuget\\packages\\microsoft.extensions.options\\9.0.0-rc.2.24473.5\\microsoft.extensions.options.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Androw\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0-rc.2.24473.5\\microsoft.extensions.primitives.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Androw\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Androw\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\Androw\\.nuget\\packages\\stackexchange.redis\\2.8.16\\stackexchange.redis.2.8.16.nupkg.sha512",
+    "C:\\Users\\Androw\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.0-rc.2.24473.5\\system.diagnostics.diagnosticsource.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\Androw\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "Unable to find package Microsoft.EntityFrameworkCore.Design. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
-      "libraryId": "Microsoft.EntityFrameworkCore.Design",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "Unable to find package Microsoft.EntityFrameworkCore.SqlServer. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
-      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "Unable to find package Microsoft.EntityFrameworkCore.Tools. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
-      "libraryId": "Microsoft.EntityFrameworkCore.Tools",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "Unable to find package System.Diagnostics.Tools. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
-      "libraryId": "System.Diagnostics.Tools",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

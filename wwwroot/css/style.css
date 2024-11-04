@@ -67,13 +67,13 @@
     margin-left: 5px
 }
 
-#in2 {
+.in2 {
     font-size: 20px;
     margin-bottom: 25px;
     margin-left: -55px;
 }
 
-#buttonBuscar {
+.buttonBuscar {
 
     display: flex;
     width: 228px;

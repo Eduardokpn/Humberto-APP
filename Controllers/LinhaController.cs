@@ -43,7 +43,8 @@ public class LinhaController : Controller
 
 
     #region Exibir
-
+    
+    [HttpGet]
     [Route("Controllers/Linhas/ExibirLinha")]
     public IActionResult ExibirLinha(int cl)
     {

@@ -17,17 +17,17 @@
         <div id="partida">
             <p id="lI">Local de Inicio</p>
 
-            <p id="in1"> INSERIR</p>
+            <p id="in1"> <i class="bi bi-crosshair"></i> Localização Atual</p>
         </div>
 
         <div id="final">
             <p id="lF">Local Final</p>
 
-            <p id="in2">INSERIR</p>
+            <input type="text" class="in2" id="localFinal">INSERIR</input>
         </div>
     </div>
 
-    <button id="buttonBuscar">BUSCAR</button>
+    <button class="buttonBuscar" onclick="buscar()">BUSCAR</button>
 
 </div>
 
@@ -40,15 +40,43 @@
 
 </div>
 
+<script type="module" src="js/GetLocation.js"></script>
+
+<script src="js/buscarRota.js"></script>
+
+
 
 <script>
         fetch('/Home/Autenticate')
-    </script>
+</script>
 
 
+    
 </body>
 
 </html>
+<!-- 
+ORDEM DE AÇÃO:
+ 
+RECEBER LOCALIZAÇÃO ATUAL: executar:
+function startWatching()
 
+RECEBER adress QUE ESTÁ NO CAMPO LOCAL FINAL E EXECUTAR:
+[Route("ConvertAdressSave")]
+[HttpPost]
+public async Task<IActionResult> ConvertAdressSave([FromBody] String adress)
+
+EXECUTAR ROTAS ArmazenarRotaFinal:
+[Route("buscarRota")]
+[HttpPost]
+public async Task<IActionResult> ArmazenarRotaFinal()
+
+EXECUTAR EXIBIR ROTAS:
+[HttpGet]
+[Route("Controller/Rotas/ExibirRotas")]
+public IActionResult ExibirRotas()
+
+
+--> 
 
 <
