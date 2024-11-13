@@ -1,0 +1,49 @@
+@page
+@model HumbertoMVC.ViewModel.calcularRota
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+    
+    <div>
+        <label>Local de origem: </label>
+        <label>Posição Atual</label>
+    </div>
+    
+    <div>
+        <label for="destidoId">Destino: </label>
+        <input id="destinoId" type="text"/>
+    </div>
+
+    <button onclick="buscar()">Pesuisar</button>
+    <script>
+        function buscar() {
+            console.log("executei");
+            startWatching();
+            
+            const destino = document.getElementById(destinoId).value
+            fetch('/api/ConvertAndressSave/ConvertAdressSave', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ destino })
+            })
+
+            fetch('/api/ConvertAndressSave/buscarRota')
+
+            fetch('Controller/Rotas/ExibirRotas')
+        }
+    </script>
+</div>
+</body>
+</html>

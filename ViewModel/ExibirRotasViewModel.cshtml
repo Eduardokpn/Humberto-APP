@@ -1,0 +1,48 @@
+@model HumbertoMVC.Models.OnibusRotaModel
+
+@{
+    ViewBag.Title = "TESTE DE EXIBIÇÃO DE ROTA";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>ROTAS</title>
+</head>
+<body>
+<h2>Detalhes das Rotas dos Ônibus: </h2>
+<ul>
+    @foreach (var route in Model.Routes)
+    {
+        <li>Rota: @route.Cr
+            @foreach (var leg in route.Legs)
+            {
+
+                foreach (var step in leg.Steps)
+                {
+                    if (step.TransitDetails != null)
+                    {
+                        <ul>
+                            <li>Linha: @step.TransitDetails.TransitLine.NameShort - @step.TransitDetails.TransitLine.Name</li>
+                            <li>Sentidoo: @step.TransitDetails.Headsign </li>
+                            <li>Paradas @step.TransitDetails.StopCount </li>
+
+                            <li>Embarque: @step.TransitDetails.StopDetails.DepartureStop.Name em @step.TransitDetails.LocalizedValues.DepartureTime.Time.Text </li>
+                            <li>Desembarque: @step.TransitDetails.StopDetails.ArrivalStop.Name em
+                                @step.TransitDetails.LocalizedValues.ArrivalTime.Time.Text </li>
+                            <li>Link da Linha: @step.TransitDetails.TransitLine.Uri </li>
+                        </ul>
+                        <hr/>
+                    }
+                }
+            }
+        </li>
+    }
+</ul>
+
+<div>
+
+</div>
+</body>
+</html>

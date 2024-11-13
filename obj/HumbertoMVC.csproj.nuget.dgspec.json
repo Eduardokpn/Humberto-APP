@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TCC COPIA\\Humberto-APP\\HumbertoMVC.csproj": {}
+    "D:\\TCC COPIA - Copia\\Humberto-APP\\HumbertoMVC.csproj": {}
   },
   "projects": {
-    "D:\\TCC COPIA\\Humberto-APP\\HumbertoMVC.csproj": {
+    "D:\\TCC COPIA - Copia\\Humberto-APP\\HumbertoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TCC COPIA\\Humberto-APP\\HumbertoMVC.csproj",
+        "projectUniqueName": "D:\\TCC COPIA - Copia\\Humberto-APP\\HumbertoMVC.csproj",
         "projectName": "HumbertoMVC",
-        "projectPath": "D:\\TCC COPIA\\Humberto-APP\\HumbertoMVC.csproj",
+        "projectPath": "D:\\TCC COPIA - Copia\\Humberto-APP\\HumbertoMVC.csproj",
         "packagesPath": "C:\\Users\\Androw\\.nuget\\packages\\",
-        "outputPath": "D:\\TCC COPIA\\Humberto-APP\\obj\\",
+        "outputPath": "D:\\TCC COPIA - Copia\\Humberto-APP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Androw\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,17 +40,29 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+            "Geocoding.Core": {
               "target": "Package",
-              "version": "[9.0.0-rc.2.24474.3, )"
+              "version": "[4.0.1, )"
             },
-            "StackExchange.Redis": {
+            "Geocoding.Google": {
               "target": "Package",
-              "version": "[2.8.16, )"
+              "version": "[4.0.1, )"
             },
-            "newtonsoft.json": {
+            "Google.Maps.Routing.V2": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[1.0.0-beta14, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.9.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.9.0, )"
             }
           },
           "imports": [

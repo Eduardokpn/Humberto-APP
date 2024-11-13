@@ -2,8 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace HumbertoMVC.Controllers;
+namespace HumbertoMVC.Controllers.spTransController;
 
+
+[Route("Linha/[controller]")]
 [ApiController]
 public class LinhaController : Controller
 {
@@ -18,7 +20,7 @@ public class LinhaController : Controller
     #region Pegar Dados (Gets)
 
     [HttpGet]
-    [Route("Controllers/Linhas/BuscarLinha")]
+    [Route("/BuscarLinha")]
     public async Task<IActionResult> BuscarLinha(string termoBusca)
     {
         try
@@ -45,7 +47,7 @@ public class LinhaController : Controller
     #region Exibir
     
     [HttpGet]
-    [Route("Controllers/Linhas/ExibirLinha")]
+    [Route("/ExibirLinha")]
     public IActionResult ExibirLinha(int cl)
     {
         try

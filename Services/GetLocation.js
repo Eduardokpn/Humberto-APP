@@ -1,36 +1,6 @@
-async function buscar() {
-    const localizacao = await startWatching()
-    if (!localizacao) {
-        console.error("Não foi possivel buscar a localização");
-        
-    } 
-    
-    const endereco = document.getElementById("localFinal").value
-
-    // projectBBaseUrl = 'http://humbertoapi.somee.com/HumbertoApii' //'https://localhost:44384'; // Substitua pela URL que você configurou no appsettings.json
-
-    const response = await fetch(`/Main/Base/iniciarBusca`, {
-        method: 'Post',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({endereco})
-});
-    if (response.ok) 
-    {
-    const rotas = response.json();
-    console.log("rotas recebidas: ", rotas);
-    }
-    else
-    {
-        console.error("erro ao iniciar a busca", response.statusText);
-    }
-     
-    
-}
-
-
 let watchId = null;
 
-function startWatching() {
+function startWaching() {
     if (navigator.geolocation) {
         watchId = navigator.geolocation.watchPosition(updatePosition, handleError, {
             enableHighAccuracy: true,
@@ -39,7 +9,6 @@ function startWatching() {
         });
         // Define um intervalo para atualizar a localização a cada 10 segundos
         alert("Monitoramento iniciado.");
-        return null
     } else {
         alert("Geolocalização não é suportada neste navegador.");
     }
@@ -57,10 +26,13 @@ function stopWatching() {
 function updatePosition(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    //const projectBBaseUrl = 'http://humbertoapi.somee.com/HumbertoApii'; // Substitua pela URL que você configurou no appsettings.json
 
-    fetch(`/Location/geoLocation/getCurrentLocation `, {
+    // Atualiza a latitude e longitude nas tags <p> em tempo real
+    document.getElementById("latitudeDisplay").textContent = latitude;
+    document.getElementById("longitudeDisplay").textContent = longitude;
 
+    // Envia os dados para o backend (opcional, só se necessário)
+    fetch('/api/Location/getCurrentLocation', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

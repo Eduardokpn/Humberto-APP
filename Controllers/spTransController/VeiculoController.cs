@@ -2,9 +2,9 @@ using HumbertoMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace HumbertoMVC.Controllers;
+namespace HumbertoMVC.Controllers.spTransController;
 
-[ApiController]
+[Route("Veicle/[controller]")][ApiController]
 public class VeiculoController : Controller
 {
     private readonly ApiService _apiService;
@@ -18,7 +18,7 @@ public class VeiculoController : Controller
     #region Buscar Previsão de chegada
 
     [HttpGet]
-    [Route("Controllers/Veiculos/BuscarParadaLinha")]
+    [Route("BuscarParadaLinha")]
     public async Task<IActionResult> BuscarPrevisaoPorParadaLinha(int cl, int cp)
     {
         try
@@ -43,7 +43,7 @@ public class VeiculoController : Controller
     #region Exibir Previsao de chegada
 
     [HttpGet]
-    [Route("Controllers/Veiculos/ExibirParadaLinha")]
+    [Route("ExibirParadaLinha")]
     public IActionResult ExibirPrevisao()
     {
         try

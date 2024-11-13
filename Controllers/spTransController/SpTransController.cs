@@ -1,19 +1,21 @@
 using HumbertoMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace HumbertoMVC.Controllers;
+namespace HumbertoMVC.Controllers.spTransController;
 
-public class ApiController : Controller
+[Route("SpTrans/[controller]")]
+public class SpTransController : Controller
 {
     private readonly ApiService _apiService;
 
-    public ApiController(ApiService apiService)
+    public SpTransController(ApiService apiService)
     {
         _apiService = apiService; // Instancia uma nova api service
     }
 
+    // Metodo autenticar na api da SpTrans
     [HttpGet]
-    [Route("/Home/Autenticate")]
+    [Route("Autenticate")]
     public async Task<IActionResult> PostAuthenticator()
     {
         // Autentica na API usando o token fornecido

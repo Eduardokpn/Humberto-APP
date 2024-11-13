@@ -5,8 +5,6 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HumbertoMVC", "HumbertoMVC.csproj", "{DF6176CE-9844-48DE-B04E-045606F1D916}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TESTE API GOOGLE", "C:\Users\Androw\Downloads\TRY_GoogleAPI\TRY_GoogleAPI\TESTE API GOOGLE\TESTE API GOOGLE.csproj", "{E4645201-1BCB-4E16-9DA8-852FAB38455C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{DF6176CE-9844-48DE-B04E-045606F1D916}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF6176CE-9844-48DE-B04E-045606F1D916}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF6176CE-9844-48DE-B04E-045606F1D916}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E4645201-1BCB-4E16-9DA8-852FAB38455C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E4645201-1BCB-4E16-9DA8-852FAB38455C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E4645201-1BCB-4E16-9DA8-852FAB38455C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E4645201-1BCB-4E16-9DA8-852FAB38455C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
