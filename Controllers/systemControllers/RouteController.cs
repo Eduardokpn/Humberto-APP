@@ -161,7 +161,7 @@ public class RouteController : Controller
             
             var rotas = JsonConvert.DeserializeObject<OnibusRotaModel>(jsonString);
            
-            return View("ViewModel/ExibirRotasViewModel.cshtml", rotas);
+            return View("Views/Home/Privacy.cshtml", rotas);
         }
         catch (Exception e)
         {

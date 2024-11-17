@@ -8,19 +8,20 @@
 
     <ItemGroup>
         <Folder Include="Controllers\googleControllers\" />
-        <Folder Include="Views\TesteLinhas\"/>
+        <Folder Include="Views\TesteLinhas\" />
     </ItemGroup>
 
     <ItemGroup>
-        <Content Remove="Views\Home\arrivalForecastTesteGemini.cshtml"/>
+        <Content Remove="Views\Home\arrivalForecastTesteGemini.cshtml" />
+        <Content Remove="wwwroot\css\styleForExibe.cs" />
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="Views\TesteLinhas\"/>
+        <Folder Include="Views\TesteLinhas\" />
     </ItemGroup>
 
     <ItemGroup>
-        <Content Remove="Views\Home\arrivalForecastTesteGemini.cshtml"/>
+        <Content Remove="Views\Home\arrivalForecastTesteGemini.cshtml" />
 
     </ItemGroup>
 

@@ -1,38 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\",
+  "WorkspaceRootPath": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\onedrive\\\u00E1rea de trabalho\\humbertomvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\wwwroot\\css\\stylefordisplay.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:wwwroot\\css\\stylefordisplay.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\onedrive\\\u00E1rea de trabalho\\humbertomvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\onedrive\\\u00E1rea de trabalho\\humbertomvc\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\onedrive\\\u00E1rea de trabalho\\humbertomvc\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\onedrive\\\u00E1rea de trabalho\\humbertomvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\onedrive\\\u00E1rea de trabalho\\humbertomvc\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\onedrive\\\u00E1rea de trabalho\\humbertomvc\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\onedrive\\\u00E1rea de trabalho\\humbertomvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\wwwroot\\css\\styleforexibe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:wwwroot\\css\\styleforexibe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\viewmodel\\exibirrotasviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:viewmodel\\exibirrotasviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\wwwroot\\js\\buscarrota.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:wwwroot\\js\\buscarrota.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,118 +46,130 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\wwwroot\\css\\style.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
-              "ToolTip": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\wwwroot\\css\\style.css",
-              "RelativeToolTip": "wwwroot\\css\\style.css",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAIwG0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-31T16:50:41.148Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-31T16:25:58.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\Views\\Home\\Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA1AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Home\\Privacy.cshtml*",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-31T16:25:49.744Z",
+              "WhenOpened": "2024-11-17T19:36:28.196Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-31T16:25:47.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T16:09:40.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-31T16:13:27.734Z",
+              "Title": "styleForDisplay.css",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\css\\styleForDisplay.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\styleForDisplay.css",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\css\\styleForDisplay.css*",
+              "RelativeToolTip": "wwwroot\\css\\styleForDisplay.css*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-17T20:05:04.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "styleForExibe.cs",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\css\\styleForExibe.cs",
+              "RelativeDocumentMoniker": "wwwroot\\css\\styleForExibe.cs",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\css\\styleForExibe.cs",
+              "RelativeToolTip": "wwwroot\\css\\styleForExibe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T20:03:48.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "wwwroot\\css\\style.css",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAcwHAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-31T16:50:20.499Z",
+              "WhenOpened": "2024-11-17T19:39:02.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwDYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T19:36:28.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExibirRotasViewModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\ViewModel\\ExibirRotasViewModel.cshtml",
+              "RelativeDocumentMoniker": "ViewModel\\ExibirRotasViewModel.cshtml",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\ViewModel\\ExibirRotasViewModel.cshtml",
+              "RelativeToolTip": "ViewModel\\ExibirRotasViewModel.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T19:34:55.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T19:35:39.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\eduar\\OneDrive\\\u00C1rea de Trabalho\\HumbertoMVC\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-31T16:13:22.352Z"
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T19:35:38.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "buscarRota.js",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\js\\buscarRota.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\buscarRota.js",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\js\\buscarRota.js",
+              "RelativeToolTip": "wwwroot\\js\\buscarRota.js",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowDsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-02T18:17:35.025Z",
+              "EditorCaption": ""
             }
           ]
         }
