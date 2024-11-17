@@ -26,44 +26,63 @@ public class BaseController : Controller
     [Route("iniciarBusca")]
     public async Task<IActionResult> IniciarBusca([FromBody] LocalizacaoEnderecoRquest request)
     {
-            Console.WriteLine("\n \n \n \n \n \n ESSA PORRA FUNCIONA?");
-            // RECEBER ENDERECO FROM FUNCTION BUSCAR
             
-            var enderecoConvert = await _geoCoding.ConvertAdress(request.endereco);
-            var enderecoConvertString = JsonConvert.SerializeObject(enderecoConvert); 
+            // RECEBER ENDERECO FROM FUNCTION BUSCAR
+            string destinyFromBody = request.endereco;
+            Adress.GeoResponse enderecoConvert = await _geoCoding.ConvertAdress(destinyFromBody);
+            string enderecoConvertString = JsonConvert.SerializeObject(enderecoConvert); 
+            
             TempData["adressDestiny"] = enderecoConvertString;
+            
             if (enderecoConvertString == null || enderecoConvertString == "")
             {
-                Console.WriteLine("Ero ao converter o endereço");
-                return BadRequest("ERRO COM O ENDERECO");
+                Console.WriteLine("Endereço de destino está vazio, verifique o processo de converção! ");
+                return BadRequest("Não foi possivel encontrar o destino informado");
             }   
-            Console.WriteLine("Destino armazenado com sucesso");
             
+            Console.WriteLine("*** Destino armazenado com sucesso ***");
+            LocationModel.Coordenadas destCoord = new LocationModel.Coordenadas();
             //Armazenar a rota
-            try
+            foreach (var result in enderecoConvert.Results)
             {
-                var destino = JsonConvert.DeserializeObject<LocationModel.Coordenadas>(enderecoConvertString);
-                await _routeController.ArmazenarRotaFinal(destino);
-                Console.WriteLine("Rota armazenada");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                return BadRequest("Falha ao calcular sua rota!");
-            }
+                double latitude = result.Geometry.Location.Lat;
+                double longitude = result.Geometry.Location.Lng;
+                destCoord = new LocationModel.Coordenadas()
+                {
+                    Latitude = latitude,
+                    Longitude = longitude,
+                };
+            };
+               
+                IActionResult ArmazenarRotaResult = await _routeController.ArmazenarRotaFinal(destCoord);
+                string rotaArmazenadaString = JsonConvert.SerializeObject(ArmazenarRotaResult);
+                var statusCode = (ArmazenarRotaResult as ObjectResult)?.StatusCode 
+                                 ?? (ArmazenarRotaResult as StatusCodeResult)?.StatusCode;
+                if (statusCode == 200)
+                {
+                    Console.WriteLine("Dados de rota armazenados com sucesso - Rota armazenada: " + rotaArmazenadaString);   
+                }
+                else
+                {
+                    Console.WriteLine("\n \n Ocorreu um erro ao calcular sua rota StatusCode: " + statusCode + "\n Exception: " + (ArmazenarRotaResult as ObjectResult)?.Value);
+                    return BadRequest("Falha ao calcular sua rota!");
+                }
+                
+                
+            
             Console.WriteLine("Rota calculada e armazenada com sucesso");
             //Exibir rotas
-            //try
-            //{
+            try
+            {
             _routeController.ExibirRotas();
             Console.WriteLine("Rota Exibir executado");
             return Ok();
-            //}
-            //catch (Exception e)
-            //{
-              //Console.WriteLine(e);
-              // return BadRequest("Não foi possivel exibir sua rota!");
-            //}
+            }
+            catch (Exception e)
+            {
+              Console.WriteLine(e);
+               return BadRequest("Não foi possivel exibir sua rota!");
+            }
         
     }
 }

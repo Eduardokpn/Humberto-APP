@@ -156,3 +156,4 @@ D:\TCC COPIA - Copia\Humberto-APP\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagge
 D:\TCC COPIA - Copia\Humberto-APP\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\TCC COPIA - Copia\Humberto-APP\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\TCC COPIA - Copia\Humberto-APP\obj\Debug\net8.0\HumbertoMVC.MvcApplicationPartsAssemblyInfo.cs
+D:\TCC COPIA - Copia\Humberto-APP\obj\Debug\net8.0\HumbertoMVC.sourcelink.json

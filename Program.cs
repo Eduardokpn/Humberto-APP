@@ -32,8 +32,17 @@ builder.Services.AddCors(options =>
     );
 });
 
-// Adiciona outros serviços
-builder.Services.AddControllers();
+// Configura os cookies
+builder.Services.Configure<CookiePolicyOptions>(options =>
+{
+    options.CheckConsentNeeded = context => true; // Perguntar consentimento ao usuário
+    options.MinimumSameSitePolicy = SameSiteMode.Strict;
+});
+
+// Adiciona o IHttpContextAccessor ao contêiner
+builder.Services.AddHttpContextAccessor(); // Este é o registro correto
+
+// Adiciona outros serviços ao contêiner
 builder.Services.AddTransient<RoutesService>();
 builder.Services.AddTransient<GeoCodingService>();
 builder.Services.AddTransient<RouteController>();
@@ -56,7 +65,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Humberto API v1");
-        c.RoutePrefix = "swagger"; // Defina o caminho para acessar a documentação em /swagger
+        c.RoutePrefix = "swagger"; // Define o caminho para acessar a documentação em /swagger
     });
 }
 

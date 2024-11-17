@@ -1,10 +1,12 @@
 async function buscar() {
+    //Recebe a localização atual.
     const localizacao = await startWatching()
     if (!localizacao) {
         console.error("Não foi possivel buscar a localização");
         
     } 
     
+    // Recebe destino
     const endereco = document.getElementById("localFinal").value
 
     // projectBBaseUrl = 'http://humbertoapi.somee.com/HumbertoApii' //'https://localhost:44384'; // Substitua pela URL que você configurou no appsettings.json
@@ -18,6 +20,7 @@ async function buscar() {
     {
     const rotas = response.json();
     console.log("rotas recebidas: ", rotas);
+    window.location.href='/Route/Route/ShowRoutes';
     }
     else
     {
@@ -34,10 +37,10 @@ function startWatching() {
     if (navigator.geolocation) {
         watchId = navigator.geolocation.watchPosition(updatePosition, handleError, {
             enableHighAccuracy: true,
-            maximumAge: 1000,
-            timeout: 5000 //5000
+            maximumAge: 100000,
+            timeout: 500000 //5000
         });
-        // Define um intervalo para atualizar a localização a cada 10 segundos
+        // Define um intervalo para atualizar a localização a cada 5 segundos
         alert("Monitoramento iniciado.");
         return null
     } else {
@@ -59,6 +62,7 @@ function updatePosition(position) {
     const longitude = position.coords.longitude;
     //const projectBBaseUrl = 'http://humbertoapi.somee.com/HumbertoApii'; // Substitua pela URL que você configurou no appsettings.json
 
+    
     fetch(`/Location/geoLocation/getCurrentLocation `, {
 
         method: 'POST',

@@ -36,7 +36,7 @@ namespace HumbertoMVC.Services
                 },
                 Destination = new Waypoint
                 {
-                    Location = new Location { LatLng = new LatLng { Latitude = destCord.Latitude, Longitude = destCord.Longitude 
+                    Location = new Location { LatLng = new LatLng { Latitude = destCord.Longitude, Longitude = destCord.Latitude 
                         /*Latitude = -23.5200551, Longitude = -46.5967885 */} }
                 },
                 TravelMode = RouteTravelMode.Transit,
