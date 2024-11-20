@@ -13,7 +13,7 @@
     <title>Bootstrap demo</title>
 </head>
 <body>
-    
+<div class="blueCont d-flex flex-column align-items-center justify-content-start">
     @foreach (var route in Model.Routes)
     {
             @foreach (var leg in route.Legs)
@@ -24,7 +24,7 @@
                     if (step.TransitDetails != null)
                     {
 
-                        <div class="blueCont d-flex flex-column align-items-center justify-content-start">
+                       
                             <div class="box">
                                <div class="d-flex flex-column justify-content-center ms-3" style="flex-grow: 1;">
                                     <p alt="PONTO DE PARTIDA" class="pontoP mb-1" style="margin-top: 3px; margin-left: -1px;">@step.TransitDetails.StopDetails.DepartureStop.Name</p>
@@ -33,11 +33,12 @@
                                </div>
                             <p class="time-text mb-0 me-3 align-self-center" style="margin-top: -30px; margin-left: -10px; text-align: right; font-size: 25px">@step.TransitDetails.LocalizedValues.DepartureTime.Time.Text</p>
                             </div>
-                        </div>
+                       
                     }
                 }
             }
     }
+</div>
     
 
 </body>
