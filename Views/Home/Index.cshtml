@@ -1,13 +1,13 @@
 ﻿@page "/Home"
 
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <link href="~/css/style.css" rel="stylesheet"/>
     <meta charset="utf-8">
     <title>Bootstrap demo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,52 +38,22 @@
 
 </div>
 
+    <!--<footer>
+        <div class="bar d-flex justify-content-between" style="width: auto; height: 100px;" >
 
-<div id="telas">
+            <a href="./Views/Home/TestessApi.cshmtl">
 
-    <img id="home" src="~/css/home_24dp_000000.png" alt="Home"/>
+            </a>
 
-    <img id="star" src="~/css/grade_24dp_000000.png" alt="Favoritos"/>
 
-</div>
+        </div>
+    </footer> -->
 
-<!--<script type="module" src="js/GetLocation.js"></script>-->
+
+
 
 <script src="js/buscarRota.js"></script>
+<script>fetch('/SpTrans/SpTrans/Autenticate')</script>
 
-
-
-<script>
-        fetch('/SpTrans/SpTrans/Autenticate')
-</script>
-
-
-    
 </body>
-
 </html>
-<!-- 
-ORDEM DE AÇÃO:
- 
-RECEBER LOCALIZAÇÃO ATUAL: executar:
-function startWatching()
-
-RECEBER adress QUE ESTÁ NO CAMPO LOCAL FINAL E EXECUTAR:
-[Route("ConvertAdressSave")]
-[HttpPost]
-public async Task<IActionResult> ConvertAdressSave([FromBody] String adress)
-
-EXECUTAR ROTAS ArmazenarRotaFinal:
-[Route("buscarRota")]
-[HttpPost]
-public async Task<IActionResult> ArmazenarRotaFinal()
-
-EXECUTAR EXIBIR ROTAS:
-[HttpGet]
-[Route("Controller/Rotas/ExibirRotas")]
-public IActionResult ExibirRotas()
-
-
---> 
-
-<
