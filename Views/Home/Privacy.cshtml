@@ -16,6 +16,7 @@
 <div class="blueCont d-flex flex-column align-items-center justify-content-start">
     @foreach (var route in Model.Routes)
     {
+     <li>Rota: @route.Cr
             @foreach (var leg in route.Legs)
             {
 
@@ -37,6 +38,7 @@
                     }
                 }
             }
+     </li>
     }
 </div>
     

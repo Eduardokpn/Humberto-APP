@@ -215,3 +215,13 @@ C:\Users\eduar\Documents\ETEC\Humberto-APP\obj\Debug\net8.0\refint\HumbertoMVC.d
 C:\Users\eduar\Documents\ETEC\Humberto-APP\obj\Debug\net8.0\HumbertoMVC.pdb
 C:\Users\eduar\Documents\ETEC\Humberto-APP\obj\Debug\net8.0\HumbertoMVC.genruntimeconfig.cache
 C:\Users\eduar\Documents\ETEC\Humberto-APP\obj\Debug\net8.0\ref\HumbertoMVC.dll
+D:\TCC COPIA - Copia\Humberto-APP\bin\Debug\net8.0\out\out\web.config
+D:\TCC COPIA - Copia\Humberto-APP\bin\Debug\net8.0\out\web.config
+D:\TCC COPIA - Copia\Humberto-APP\bin\Debug\net8.0\out\appsettings.Development.json
+D:\TCC COPIA - Copia\Humberto-APP\bin\Debug\net8.0\out\appsettings.json
+D:\TCC COPIA - Copia\Humberto-APP\bin\Debug\net8.0\out\HumbertoMVC.deps.json
+D:\TCC COPIA - Copia\Humberto-APP\bin\Debug\net8.0\out\HumbertoMVC.runtimeconfig.json
+D:\TCC COPIA - Copia\Humberto-APP\bin\Debug\net8.0\out\out\appsettings.Development.json
+D:\TCC COPIA - Copia\Humberto-APP\bin\Debug\net8.0\out\out\appsettings.json
+D:\TCC COPIA - Copia\Humberto-APP\bin\Debug\net8.0\out\out\HumbertoMVC.deps.json
+D:\TCC COPIA - Copia\Humberto-APP\bin\Debug\net8.0\out\out\HumbertoMVC.runtimeconfig.json
