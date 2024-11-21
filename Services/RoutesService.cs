@@ -47,7 +47,7 @@ namespace HumbertoMVC.Services
                 },
                 //TransitPreferences = TransitPreferences.Types.TransitTravelMode.Bus,
                 RoutingPreference = RoutingPreference.Unspecified,
-                ComputeAlternativeRoutes = false,
+                ComputeAlternativeRoutes = true,
 
             };
 
