@@ -5,10 +5,10 @@
 }
 
 #reta {
-    margin-top: -15px;
+    margin-top: -1px;
     padding: 0;
     width: 100%;
-    height: 350px;
+    height: 400px;
     background-color: #003acc;
     justify-content: center;
     border-radius: 0px 0px 455px 455px;
@@ -30,35 +30,14 @@
 
 }
 
-#partida {
+.final {
     display: flex;
     width: 277px;
     height: 80px;
     border-radius: 10px;
     background-color: #e6e6e6;
     margin: 7px;
-}
-
-#lI {
-    font-size: 12px;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-#in1 {
-    font-size: 20px;
-    margin-top: 25px;
-    margin-left: -75px;
-}
-
-#final {
-    display: flex;
-    width: 277px;
-    height: 80px;
-    border-radius: 10px;
-    background-color: #e6e6e6;
-    margin: 7px;
-    align-items: flex-end;
+    
 }
 
 #lF {
@@ -67,11 +46,6 @@
     margin-left: 5px
 }
 
-.in2 {
-    font-size: 20px;
-    margin-bottom: 25px;
-    margin-left: -55px;
-}
 
 .buttonBuscar {
 
