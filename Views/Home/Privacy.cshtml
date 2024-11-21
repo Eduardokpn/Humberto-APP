@@ -4,19 +4,18 @@
 }
 
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <link href="~/css/styleForDisplay.css" rel="stylesheet"/>
+    <link href="~/css/styleForDisplay.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <title>Bootstrap demo</title>
 </head>
 <body>
-<div class="blueCont d-flex flex-column align-items-center justify-content-start">
-    @foreach (var route in Model.Routes)
-    {
-     <li>Rota: @route.Cr
+    <div class="blueCont d-flex flex-column align-items-center justify-content-start">
+        @foreach (var route in Model.Routes)
+        {
             @foreach (var leg in route.Legs)
             {
 
@@ -25,23 +24,20 @@
                     if (step.TransitDetails != null)
                     {
 
-                       
-                            <div class="box">
-                               <div class="d-flex flex-column justify-content-center ms-3" style="flex-grow: 1;">
-                                    <p alt="PONTO DE PARTIDA" class="pontoP mb-1" style="margin-top: 3px; margin-left: -1px;">@step.TransitDetails.StopDetails.DepartureStop.Name</p>
-                                <p alt="LINHA" class="linha" style="margin-top: -5px;">@step.TransitDetails.TransitLine.NameShort - @step.TransitDetails.TransitLine.Name</p>
-                                <p class="pontoP" style="margin-top: -10px;"> @step.TransitDetails.StopDetails.ArrivalStop.Name</p>
-                               </div>
-                            <p class="time-text mb-0 me-3 align-self-center" style="margin-top: -30px; margin-left: -10px; text-align: right; font-size: 25px">@step.TransitDetails.LocalizedValues.DepartureTime.Time.Text</p>
+                        <div class="box " style="padding: 8px;">
+                            <div class="info d-flex flex-column" style=" justify-content: space-between">
+                                <div class="line-info fw-bold " style="font-size: 20px; max-width: 270px; ">Linha: @step.TransitDetails.TransitLine.NameShort - @step.TransitDetails.TransitLine.Name</div>
+                                <div class="boarding-info" style="margin-top: 5px; max-width: 260px;">Embarque: @step.TransitDetails.StopDetails.DepartureStop.Name</div>
+                                <div class="disembarking-info" style="margin-bottom: 10px; max-width: 3000px;">Desembarque: @step.TransitDetails.StopDetails.ArrivalStop.Name</div>
                             </div>
-                       
+                            <div class="time fw-bold" style="margin-right: 3px; margin-top: 5px; font-size: 25px; ">@step.TransitDetails.LocalizedValues.ArrivalTime.Time.Text</div>
+                        </div>
+
                     }
                 }
             }
-     </li>
-    }
-</div>
-    
+        }
 
+    </div>
 </body>
 </html>
