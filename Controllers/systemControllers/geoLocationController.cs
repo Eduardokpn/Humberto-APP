@@ -24,16 +24,6 @@ public class geoLocationController : Controller
             // Use a latitude e longitude conforme necessário
             var coordenadasJson = JsonConvert.SerializeObject(coordenadas);
             
-            /*
-            HttpContext.Response.Cookies.Append("CoordenadasOrigem", coordenadasJson, new CookieOptions
-            {
-                Expires = DateTime.Now.AddMinutes(30), // Define o tempo de expiração
-                HttpOnly = false,                      // Apenas acessível por HTTP (mais seguro)
-                Secure = false,                        // Apenas transmitido via HTTPS
-                SameSite = SameSiteMode.Lax,    // Evita que o cookie seja enviado em requisições de terceiros
-                Path = "/"
-            });*/
-
 
             //Salvar coordenadas no Session
             HttpContext.Session.SetString("CoordenadasOrigem", coordenadasJson);
