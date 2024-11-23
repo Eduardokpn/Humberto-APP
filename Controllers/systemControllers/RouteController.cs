@@ -74,10 +74,6 @@ public class RouteController : Controller
         {
             Console.WriteLine("teste breakpoint");
             string? sessionCord = _httpContextAccessor.HttpContext?.Session.GetString("CoordenadasOrigem") ?? string.Empty;
-            /*if (HttpContext.Request.Cookies.TryGetValue("CoordenadasOrigem", out var sessionCord))
-            {
-                Console.WriteLine($"Valor do cookie: {sessionCord}");
-            }*/
             
             Console.WriteLine(sessionCord);
             if (string.IsNullOrEmpty(sessionCord))

@@ -5965,11 +5965,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EDU\\Humberto-APP\\HumbertoMVC.csproj",
+      "projectUniqueName": "D:\\Bruno_3DS\\TCC\\Humberto-APP\\HumbertoMVC.csproj",
       "projectName": "HumbertoMVC",
-      "projectPath": "D:\\EDU\\Humberto-APP\\HumbertoMVC.csproj",
+      "projectPath": "D:\\Bruno_3DS\\TCC\\Humberto-APP\\HumbertoMVC.csproj",
       "packagesPath": "C:\\Users\\etechas\\.nuget\\packages\\",
-      "outputPath": "D:\\EDU\\Humberto-APP\\obj\\",
+      "outputPath": "D:\\Bruno_3DS\\TCC\\Humberto-APP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

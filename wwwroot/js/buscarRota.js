@@ -1,11 +1,4 @@
-async function buscar() {
-    //Recebe a localização atual.
-    const localizacao = await startWatching()
-    if (!localizacao) {
-        console.error("Não foi possivel buscar a localização");
-        
-    } 
-    
+async function buscar() { 
     // Recebe destino
     const endereco = document.getElementById("localFinal").value
 
@@ -24,6 +17,7 @@ async function buscar() {
     }
     else
     {
+        alert(response.statusText)
         console.error("erro ao iniciar a busca", response.statusText);
     }
      
@@ -41,7 +35,6 @@ function startWatching() {
             timeout: 500000 //5000
         });
         // Define um intervalo para atualizar a localização a cada 5 segundos
-        alert("Monitoramento iniciado.");
         return null
     } else {
         alert("Geolocalização não é suportada neste navegador.");
@@ -81,3 +74,7 @@ function updatePosition(position) {
 function handleError(error) {
     console.error("Erro ao obter a localização:", error);
 }
+
+window.addEventListener("load", (event) => {
+    startWatching()
+});
