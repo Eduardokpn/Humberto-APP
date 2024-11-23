@@ -1,11 +1,7 @@
 async function buscar() {
     //Recebe a localização atual.
     const localizacao = await startWatching()
-    if (!localizacao) {
-        console.error("Não foi possivel buscar a localização");
-        
-    } 
-    
+
     // Recebe destino
     const endereco = document.getElementById("localFinal").value
 
