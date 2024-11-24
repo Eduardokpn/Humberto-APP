@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TCC\\Humberto-APP\\HumbertoMVC.csproj": {}
+    "D:\\TCC - Humberto\\Humberto-APP\\HumbertoMVC.csproj": {}
   },
   "projects": {
-    "D:\\TCC\\Humberto-APP\\HumbertoMVC.csproj": {
+    "D:\\TCC - Humberto\\Humberto-APP\\HumbertoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TCC\\Humberto-APP\\HumbertoMVC.csproj",
+        "projectUniqueName": "D:\\TCC - Humberto\\Humberto-APP\\HumbertoMVC.csproj",
         "projectName": "HumbertoMVC",
-        "projectPath": "D:\\TCC\\Humberto-APP\\HumbertoMVC.csproj",
+        "projectPath": "D:\\TCC - Humberto\\Humberto-APP\\HumbertoMVC.csproj",
         "packagesPath": "C:\\Users\\Androw\\.nuget\\packages\\",
-        "outputPath": "D:\\TCC\\Humberto-APP\\obj\\",
+        "outputPath": "D:\\TCC - Humberto\\Humberto-APP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Androw\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,7 +21,8 @@
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -33,20 +34,35 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "newtonsoft.json": {
+            "Geocoding.Core": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[4.0.1, )"
+            },
+            "Geocoding.Google": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Google.Maps.Routing.V2": {
+              "target": "Package",
+              "version": "[1.0.0-beta14, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.9.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.9.0, )"
             }
           },
           "imports": [

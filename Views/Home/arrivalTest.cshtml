@@ -1,7 +1,7 @@
-@model HumbertoMVC.Models.PrevisaoModel
+@model PrevisaoModel
 
 @{
-ViewData["Title"] = "Buscar Linhas";
+    ViewData["Title"] = "Buscar Linhas";
 }
 
 <h2>Buscar Linhas</h2>
@@ -9,12 +9,12 @@ ViewData["Title"] = "Buscar Linhas";
 <form method="post" asp-action="BuscarLinhas">
     <div class="form-group">
         <label for="Origem">Origem:</label>
-        <input type="text" id="Origem" name="Origem" class="form-control" />
+        <input type="text" id="Origem" name="Origem" class="form-control"/>
     </div>
 
     <div class="form-group">
         <label for="Destino">Destino:</label>
-        <input type="text" id="Destino" name="Destino" class="form-control" />
+        <input type="text" id="Destino" name="Destino" class="form-control"/>
     </div>
 
     <button type="submit" class="btn btn-primary">Buscar</button>
@@ -22,35 +22,59 @@ ViewData["Title"] = "Buscar Linhas";
 
 @if (Model != null)
 {
-<h3>Resultado da Busca</h3>
+    <h3>Resultado da Busca</h3>
 
 
-<div>
-    <h4>Parada: @Model.P.Np (Código: @Model.P.Cp)</h4>
-    <p><strong>Latitude (parada):</strong> @Model.P.Py</p>
-    <p><strong>Longitude (parada):</strong> @Model.P.Px</p>
+    <div>
+        <h4>Parada: @Model.P.Np (Código: @Model.P.Cp)</h4>
+        <p>
+            <strong>Latitude (parada):</strong> @Model.P.Py
+        </p>
+        <p>
+            <strong>Longitude (parada):</strong> @Model.P.Px
+        </p>
 
-    @foreach (var linha in Model.P.L)
-    {
-    <h5>Linha: @linha.C (Código: @linha.Cl)</h5>
-    <p><strong>Sentido:</strong> @(linha.Sl == 1 ? "Terminal Principal para Secundário" : "Terminal Secundário para Principal")</p>
-    <p><strong>Destino (lt0):</strong> @linha.Lt0</p>
-    <p><strong>Origem (lt1):</strong> @linha.Lt1</p>
-    <p><strong>Veículos Localizados:</strong> @linha.Qv</p>
+        @foreach (var linha in Model.P.L)
+        {
+            <h5>Linha: @linha.C (Código: @linha.Cl)</h5>
+            <p>
+                <strong>Sentido:</strong> @(linha.Sl == 1 ? "Terminal Principal para Secundário" : "Terminal Secundário para Principal")
+            </p>
+            <p>
+                <strong>Destino (lt0):</strong> @linha.Lt0
+            </p>
+            <p>
+                <strong>Origem (lt1):</strong> @linha.Lt1
+            </p>
+            <p>
+                <strong>Veículos Localizados:</strong> @linha.Qv
+            </p>
 
-    @foreach (var veiculo in linha.Vs)
-    {
-    <div style="margin-left: 20px;">
-        <p><strong>Prefixo do Veículo:</strong> @veiculo.P</p>
-        <p><strong>Horário Previsto (t):</strong> @veiculo.T</p>
-        <p><strong>Acessível para Pessoas com Deficiência (a):</strong> @(veiculo.A ? "Sim" : "Não")</p>
-        <p><strong>Horário UTC (ta):</strong> @veiculo.Ta</p>
-        <p><strong>Latitude (veículo):</strong> @veiculo.Py</p>
-        <p><strong>Longitude (veículo):</strong> @veiculo.Px</p>
+            @foreach (var veiculo in linha.Vs)
+            {
+                <div style="margin-left: 20px;">
+                    <p>
+                        <strong>Prefixo do Veículo:</strong> @veiculo.P
+                    </p>
+                    <p>
+                        <strong>Horário Previsto (t):</strong> @veiculo.T
+                    </p>
+                    <p>
+                        <strong>Acessível para Pessoas com Deficiência (a):</strong> @(veiculo.A ? "Sim" : "Não")
+                    </p>
+                    <p>
+                        <strong>Horário UTC (ta):</strong> @veiculo.Ta
+                    </p>
+                    <p>
+                        <strong>Latitude (veículo):</strong> @veiculo.Py
+                    </p>
+                    <p>
+                        <strong>Longitude (veículo):</strong> @veiculo.Px
+                    </p>
+                </div>
+            }
+        }
     </div>
-    }
-    }
-</div>
 }
 }
 else

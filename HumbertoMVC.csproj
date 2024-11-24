@@ -1,61 +1,47 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="newtonsoft.json" Version="13.0.1" />
-  </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Controllers\googleControllers\" />
+        <Folder Include="Views\TesteLinhas\" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\TesteLinhas\" />
-  </ItemGroup>
+    <ItemGroup>
+        <Content Remove="Views\Home\arrivalForecastTesteGemini.cshtml" />
+        <Content Remove="wwwroot\css\styleForExibe.cs" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <Content Remove="Views\Home\arrivalForecastTesteGemini.cshtml" />
-  </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Views\TesteLinhas\" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="System.Diagnostics.Tools" Version="4.3.0" />
-  </ItemGroup>
+    <ItemGroup>
+        <Content Remove="Views\Home\arrivalForecastTesteGemini.cshtml" />
 
-  <ItemGroup>
-<<<<<<< HEAD
-    <PackageReference Include="newtonsoft.json" Version="13.0.1" />
-  </ItemGroup>
+    </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\TesteLinhas\" />
-  </ItemGroup>
+    <ItemGroup>
+      <None Include="wwwroot\js\buscarRota.js" />
+      <None Remove="Services\GetLocation.js" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <Content Remove="Views\Home\arrivalForecastTesteGemini.cshtml" />
-=======
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="System.Diagnostics.Tools" Version="4.3.0" />
->>>>>>> main
-  </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Geocoding.Core" Version="4.0.1" />
+      <PackageReference Include="Geocoding.Google" Version="4.0.1" />
+      <PackageReference Include="Google.Maps.Routing.V2" Version="1.0.0-beta14" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.9.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Controllers\GoogleControllers.cs" />
+      <Compile Remove="Controllers\RotasExibicaoController.cs" />
+    </ItemGroup>
 
 </Project>

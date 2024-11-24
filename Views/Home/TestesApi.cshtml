@@ -1,4 +1,4 @@
-@model List<HumbertoMVC.Models.linhasModel>;
+@model List<linhasModel>;
 
 
 @{
@@ -8,22 +8,22 @@
 
 @if (Model != null && Model.Any())
 {
-<ul>
-    @foreach (var linha in Model)
-    {
-    <li>
-        Código: @linha.Cl - Linha: @linha.Lt <br />
-        Origem: @linha.Tp <br />
-        Destino: @linha.Ts <br />
-        Sentido: @(linha.Sl == 1 ? "Ida" : "Volta") <br />
-        Carregada: @(linha.Lc ? "Sim" : "Não") <br />
-        Tipo de Linha: @linha.Tl
-    </li>
-    <hr />
-    }
-</ul>
+    <ul>
+        @foreach (var linha in Model)
+        {
+            <li>
+                Código: @linha.Cl - Linha: @linha.Lt <br/>
+                Origem: @linha.Tp <br/>
+                Destino: @linha.Ts <br/>
+                Sentido: @(linha.Sl == 1 ? "Ida" : "Volta") <br/>
+                Carregada: @(linha.Lc ? "Sim" : "Não") <br/>
+                Tipo de Linha: @linha.Tl
+            </li>
+            <hr/>
+        }
+    </ul>
 }
 else
 {
-<p>Nenhuma linha encontrada.</p>
+    <p>Nenhuma linha encontrada.</p>
 }
