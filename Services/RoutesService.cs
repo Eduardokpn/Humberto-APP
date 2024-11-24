@@ -36,8 +36,7 @@ namespace HumbertoMVC.Services
                 },
                 Destination = new Waypoint
                 {
-                    Location = new Location { LatLng = new LatLng { Latitude = destCord.Longitude, Longitude = destCord.Latitude 
-                        /*Latitude = -23.5200551, Longitude = -46.5967885 */} }
+                    Location = new Location { LatLng = new LatLng { Latitude = destCord.Latitude, Longitude = destCord.Longitude} }
                 },
                 TravelMode = RouteTravelMode.Transit,
                 TransitPreferences = new TransitPreferences
@@ -56,12 +55,10 @@ namespace HumbertoMVC.Services
             
            // var content = new StringContent(JsonConvert.SerializeObject(request));
            var content = JsonConvert.SerializeObject(response);
-           Console.WriteLine("Conteúdo serializado de response (JSON):");
-           Console.WriteLine((string?)content); // Exibe o JSON gerado para verificação
-
+           
            // Deserializando para OnibusRotaModel
            var responseDeserialized = JsonConvert.DeserializeObject<OnibusRotaModel>(content);
-
+            
             // Retornando o objeto deserializado
             return responseDeserialized;
         }

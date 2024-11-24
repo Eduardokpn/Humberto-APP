@@ -49,6 +49,7 @@ builder.Services.AddTransient<RouteController>();
 builder.Services.AddTransient<BaseController>();
 builder.Services.AddTransient<AdressController>();
 
+
 var app = builder.Build();
 
 // Configura o pipeline de requisições HTTP
