@@ -24,7 +24,7 @@ public class RouteController : Controller
     // Recebe o destino em cordenadas e busca as rotas
     [Route("searchRouteByDestiny")]
     [HttpPost]
-    public async Task<IActionResult> ArmazenarRotaFinal(LocationModel.Coordenadas destino)
+    /*public async Task<IActionResult> ArmazenarRotaFinal(LocationModel.Coordenadas destino)
     {
         try
         {
@@ -64,54 +64,64 @@ public class RouteController : Controller
             throw;
         }
         
-    }
+    }*/
     
     [HttpGet]
     [Route("storeRoutes")]
-    public async Task<IActionResult> ArmazenarRotas(double latitude, double longitude) 
+    public async Task<IActionResult> ArmazenarRotas(LocationModel.Coordenadas destCord, LocationModel.Coordenadas origemCord) 
     {
         try
         {
-            Console.WriteLine("teste breakpoint");
-            string? sessionCord = _httpContextAccessor.HttpContext?.Session.GetString("CoordenadasOrigem") ?? string.Empty;
-            /*if (HttpContext.Request.Cookies.TryGetValue("CoordenadasOrigem", out var sessionCord))
-            {
-                Console.WriteLine($"Valor do cookie: {sessionCord}");
-            }*/
-            
-            Console.WriteLine(sessionCord);
-            if (string.IsNullOrEmpty(sessionCord))
-            {
-                // Retorne um erro ou defina um valor padrão
-                return StatusCode(422, "Coordenadas não encontradas na sessão. ");
-            }
-            LocationModel.Coordenadas origemCord =
-                JsonConvert.DeserializeObject<LocationModel.Coordenadas>(sessionCord);
-            Console.WriteLine("\n \n \n \n \n \n \n VALOR DA deserializado: " + JsonConvert.SerializeObject(origemCord));
+           
+            // VALIDAR DADOS RECEBIDOS
+            // Valida objeto origemCord
             if (origemCord.Latitude == null || origemCord.Longitude == null)
             {
-                return StatusCode(422, "Faltam cordanadas de origem verifique se o GPS está ativo e funcionando corretamente");
+                Console.Error.WriteLine($"Erro ao buscar cordenadas de origem, Latitude e Longitude.  \n" +
+                                        $"Latitude Origem: {origemCord.Latitude} \n" +
+                                        $"Longitude Origem: {origemCord.Longitude} \n" +
+                                        $"Erro ocorrido no metodo Armazenar Rotas \n");
+                return StatusCode(422, new
+                {
+                    userMessage = "Opa! tivemos um problema com sua localização, Verifique se o GPS está ligado.",
+                    devMessage = "Faltam cordanadas de origem verifique o log para mais detalhes."
+                });
             }
-            LocationModel.Coordenadas destCord = new LocationModel.Coordenadas
+
+            // Valida o objeto destCoord
+            if (destCord.Latitude == null || destCord.Longitude == null)
             {
-                Latitude = latitude,
-                Longitude = longitude
-            };
-            
+                Console.Error.WriteLine($"Erro ao buscar cordenadas de detino, Latitude e Longitude. \n" +
+                                        $"Latitude Destino: {destCord.Latitude} \n" +
+                                        $"Longitude Destino: {destCord.Longitude} \n" +
+                                        $"Erro ocorrido no metodo Armazenar Rotas \n");
+                return StatusCode(422, JsonConvert.SerializeObject(new 
+                {
+                    userMessage = "Opa! tivemos um problema com o endereço digitado",
+                    devMessage = "Faltam cordanadas de detino verifique o log para mais detalhes."
+                }));
+            }
+
             
             _httpContextAccessor.HttpContext?.Session.Remove("RotasOnibus");
-            Console.WriteLine("Peso pós remove: " + (Encoding.UTF8.GetByteCount((string)JsonConvert.SerializeObject(
+            
+            Console.WriteLine("Peso pós remove session RotasOnibus: " + (Encoding.UTF8.GetByteCount((string)JsonConvert.SerializeObject(
                 _httpContextAccessor.HttpContext?.Session.GetString("RotasOnibus")))) /  1024);
             
-            // Realizando a chamada para obter o objeto deserializado
+            // Calcular rotas passando origem e destino
             OnibusRotaModel rotasDeserializada = await _routesService.Rotas(origemCord, destCord);
+            var RoutesString = JsonConvert.SerializeObject(rotasDeserializada);
             
-            Console.WriteLine("\n \n \n \n \n \n \n \n ************************************");
-            Console.WriteLine(destCord.Latitude);
-            Console.WriteLine(destCord.Longitude);
             if (rotasDeserializada.Routes.Count == 0)
             {
-                return StatusCode(400, "Não foi possivel calcular nenhuma rota para as cordenadas informadas");
+                Console.Error.WriteLine($"Erro ao buscar as rotas, rotasDeserializada, não retornou nenhuma rota \n" +
+                                        $"rotasDeserializada: {RoutesString} \n");
+                                        
+                return StatusCode(400, JsonConvert.SerializeObject(new
+                {
+                    userMessage = "Lamento, não encontramos uma rota para o endereço informado.",
+                    devMessage = "Ocorreu um erro ao calcular a rota, verifique o log para mais detalhes."
+                }));
             }
             
             // Para cada Rota atribuir um Codigo Rota 
@@ -119,26 +129,25 @@ public class RouteController : Controller
             {
                 route.Cr = index;
             }
+
+            //Alimentar a sessão com os dados das rotas
+            _httpContextAccessor.HttpContext?.Session.SetString("RotasOnibus", RoutesString);
             
-            var RoutesJson = JsonConvert.SerializeObject(rotasDeserializada);
             
-            _httpContextAccessor.HttpContext?.Session.SetString("RotasOnibus", RoutesJson);
-            
-            Console.WriteLine("==============================================================================");
-            Console.WriteLine("Origem: ");
-            Console.WriteLine(" - Latitude: " + origemCord.Latitude);
-            Console.WriteLine(" - Longitude: " + origemCord.Longitude);
-            Console.WriteLine("==============================================================================");
-            Console.WriteLine("Destino: ");
-            Console.WriteLine(" - Latitude: " + destCord.Latitude);
-            Console.WriteLine(" - Longitude: " + destCord.Longitude);
             return StatusCode(200, "Rotas Armazenadas com sucesso");
 
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
-            return StatusCode(500, $"Ocorreu um erro interno: \n {e}" );
+            Console.Error.WriteLine($"Ocorreu um erro interno no metodo ArmazenarRotas \n" +
+                                    $"Status Code: {500} \n" +
+                                    $"Exception: {e} \n");
+            return StatusCode(500, JsonConvert.SerializeObject(new
+            {
+                userMessage = "Ocorreu um erro interno, tente novamente mais tarde.",
+                devMessage = $"Ocorreu um erro interno, verifique os logs,  \n" +
+                             $"Exception: {e}  \n"
+            }));
         }
     }
 
@@ -146,27 +155,42 @@ public class RouteController : Controller
     [Route("ShowRoutes")]
     public IActionResult ExibirRotas()
     {
-        Console.WriteLine("Rota do onibus do get :" + _httpContextAccessor.HttpContext?.Session.GetString("RotasOnibus"));
         try
         {
-            var jsonString = _httpContextAccessor.HttpContext?.Session.GetString("RotasOnibus");
+            string? rotasString = _httpContextAccessor.HttpContext?.Session.GetString("RotasOnibus") ?? String.Empty;
             
-            if (jsonString == string.Empty || jsonString == "" || jsonString == null)
+            if (rotasString == string.Empty || rotasString == "" || rotasString == null)
             {
-                return StatusCode(404, "Não foi possivel exibir nenhuma rota," +
-                                       " certifique-se de que alguma rota foi armazenada");
+                Console.Error.WriteLine($"Ocorreu um erro ao exibir as rotas \n" +
+                                        $"Metodo ExibirRotas \n" +
+                                        $"Status Code: {404} \n" +
+                                        $"Dados da session RotasOnibus: {rotasString} \n" +
+                                        $"Redirecionando para a Home Page");
+                
+                return Redirect("/home?redirected=true");
+                /*return StatusCode(404, new { 
+                    userMessage = $"Ops! tivemos um problema, volte e tente novamente",
+                    devMessage = $"Ocorreu um erro ao buscar as rotas da session RotasOnibus, \n verifique os logs"
+                });*/
             }
             
            
             
-            var rotas = JsonConvert.DeserializeObject<OnibusRotaModel>(jsonString);
+            var rotas = JsonConvert.DeserializeObject<OnibusRotaModel>(rotasString);
            
             return View("Views/Home/Privacy.cshtml", rotas);
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
-            return StatusCode(500, "Ocorreu um erro interno ao exibir as rotas!");
+            Console.Error.WriteLine($"Ocorreu um erro interno no metodo ExibirRotas" +
+                                    $"Status Code: {500}" +
+                                    $"Exception: {e}");
+            return StatusCode(500, new
+            {
+                userMessage = "Ocorreu um erro interno, tente novamente mais tarde.",
+                devMessage = $"Ocorreu um erro interno, verifique os logs, " +
+                             $"Exception: {e} "
+            });
         }
         
     }

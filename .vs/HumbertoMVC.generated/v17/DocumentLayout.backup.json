@@ -3,44 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\wwwroot\\css\\stylefordisplay.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:wwwroot\\css\\stylefordisplay.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\wwwroot\\js\\micbotton.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:wwwroot\\js\\micbotton.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\services\\routesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:services\\routesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\controllers\\gambi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:controllers\\gambi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\wwwroot\\js\\buscarrota.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:wwwroot\\js\\buscarrota.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\services\\geocodingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:services\\geocodingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\viewmodel\\calcularrota.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:viewmodel\\calcularrota.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\controllers\\systemcontrollers\\geolocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:controllers\\systemcontrollers\\geolocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\viewmodel\\exibirrotasviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:viewmodel\\exibirrotasviewmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|c:\\users\\eduar\\documents\\etec\\humberto-app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF6176CE-9844-48DE-B04E-045606F1D916}|HumbertoMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,9 +49,13 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 380,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 165,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -62,72 +66,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T01:26:43.329Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T02:02:37.204Z",
-              "EditorCaption": ""
+              "Title": "micBotton.js",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\js\\micBotton.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\micBotton.js",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\js\\micBotton.js",
+              "RelativeToolTip": "wwwroot\\js\\micBotton.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-25T18:47:43.736Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T01:50:49.964Z",
-              "EditorCaption": ""
+              "DocumentIndex": 4,
+              "Title": "GeoCodingService.cs",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Services\\GeoCodingService.cs",
+              "RelativeDocumentMoniker": "Services\\GeoCodingService.cs",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Services\\GeoCodingService.cs",
+              "RelativeToolTip": "Services\\GeoCodingService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T18:32:58.024Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "RoutesService.cs",
               "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Services\\RoutesService.cs",
               "RelativeDocumentMoniker": "Services\\RoutesService.cs",
               "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Services\\RoutesService.cs",
               "RelativeToolTip": "Services\\RoutesService.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowDEAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T01:22:30.475Z",
+              "WhenOpened": "2024-11-23T01:05:32.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BaseController.cs",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T01:05:24.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "gambi.cs",
-              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Controllers\\gambi.cs",
-              "RelativeDocumentMoniker": "Controllers\\gambi.cs",
-              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Controllers\\gambi.cs",
-              "RelativeToolTip": "Controllers\\gambi.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T01:22:23.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -135,66 +123,67 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T01:22:22.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T01:05:20.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "buscarRota.js",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\js\\buscarRota.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\buscarRota.js",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\js\\buscarRota.js",
+              "RelativeToolTip": "wwwroot\\js\\buscarRota.js",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-23T00:38:00.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExibirRotasViewModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\ViewModel\\ExibirRotasViewModel.cshtml",
+              "RelativeDocumentMoniker": "ViewModel\\ExibirRotasViewModel.cshtml",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\ViewModel\\ExibirRotasViewModel.cshtml",
+              "RelativeToolTip": "ViewModel\\ExibirRotasViewModel.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T00:42:56.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "calcularRota.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\ViewModel\\calcularRota.cshtml",
+              "RelativeDocumentMoniker": "ViewModel\\calcularRota.cshtml",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\ViewModel\\calcularRota.cshtml",
+              "RelativeToolTip": "ViewModel\\calcularRota.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T00:42:52.374Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Controllers\\BaseController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BaseController.cs",
-              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Controllers\\BaseController.cs",
-              "RelativeToolTip": "Controllers\\BaseController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwA4AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T01:21:54.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "geoLocationController.cs",
-              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Controllers\\systemControllers\\geoLocationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\systemControllers\\geoLocationController.cs",
-              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Controllers\\systemControllers\\geoLocationController.cs",
-              "RelativeToolTip": "Controllers\\systemControllers\\geoLocationController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T01:21:49.276Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 380,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\css\\style.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
               "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\css\\style.css",
               "RelativeToolTip": "wwwroot\\css\\style.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-21T02:07:00.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T00:40:26.521Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "styleForDisplay.css",
-              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\css\\styleForDisplay.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\styleForDisplay.css",
-              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\wwwroot\\css\\styleForDisplay.css*",
-              "RelativeToolTip": "wwwroot\\css\\styleForDisplay.css*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-21T01:36:49.881Z",
-              "EditorCaption": ""
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T00:38:53.441Z"
             }
           ]
         }
