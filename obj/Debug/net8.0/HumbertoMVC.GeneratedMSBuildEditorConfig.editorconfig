@@ -22,8 +22,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld01vZGVsXGNhbGN1bGFyUm90YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TCC - Humberto/Humberto-APP/ViewModel/ExibirRotasViewModel.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld01vZGVsXEV4aWJpclJvdGFzVmlld01vZGVsLmNzaHRtbA==
+[D:/TCC - Humberto/Humberto-APP/ViewModel/ExibirListaRotasViewModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld01vZGVsXEV4aWJpckxpc3RhUm90YXNWaWV3TW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TCC - Humberto/Humberto-APP/ViewModel/ExibirMapaViewModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld01vZGVsXEV4aWJpck1hcGFWaWV3TW9kZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/TCC - Humberto/Humberto-APP/ViewModel/GetLocationViewModel.cshtml]

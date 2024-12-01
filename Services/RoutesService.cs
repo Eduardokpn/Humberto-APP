@@ -25,7 +25,7 @@ namespace HumbertoMVC.Services
             HttpClient httpClient = new HttpClient();
             GoogleCredential credential = GoogleCredential.GetApplicationDefault();
             RoutesClient client = RoutesClient.Create();
-            CallSettings callSettings = CallSettings.FromHeader("X-Goog-FieldMask","routes.legs.steps.transitDetails,routes.duration,routes.polyline.encodedPolyline");
+            CallSettings callSettings = CallSettings.FromHeader("X-Goog-FieldMask","routes.legs.steps,routes.duration,routes.polyline.encodedPolyline");
 
             ComputeRoutesRequest request = new ComputeRoutesRequest
             {
@@ -58,7 +58,9 @@ namespace HumbertoMVC.Services
            
            // Deserializando para OnibusRotaModel
            var responseDeserialized = JsonConvert.DeserializeObject<OnibusRotaModel>(content);
-            
+           
+           Console.WriteLine(content);
+           
             // Retornando o objeto deserializado
             return responseDeserialized;
         }

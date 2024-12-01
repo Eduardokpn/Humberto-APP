@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace HumbertoMVC.ViewModel;
 
-public class ExibirRotasViewModel : PageModel
+public class ExibirMapaViewModel : PageModel
 {
     public void OnGet()
     {
