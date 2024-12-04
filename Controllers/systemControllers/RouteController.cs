@@ -22,49 +22,6 @@ public class RouteController : Controller
     } 
     
     // Recebe o destino em cordenadas e busca as rotas
-    [Route("searchRouteByDestiny")]
-    [HttpPost]
-    /*public async Task<IActionResult> ArmazenarRotaFinal(LocationModel.Coordenadas destino)
-    {
-        try
-        {
-
-            //var adresJson = TempData["adressDestiny"] as string; //HttpContext.Session.GetString("adressDestiny");
-            var adressString = JsonConvert.SerializeObject(destino);
-            if (adressString == null || adressString == "")
-            {
-                return StatusCode(403, "Erro ao buscar cordenadas de destino;");
-            }
-
-            var ArmazenarRotaResult = await ArmazenarRotas(destino.Longitude, destino.Latitude);
-                
-            var statusCode = (ArmazenarRotaResult as ObjectResult)?.StatusCode 
-                             ?? (ArmazenarRotaResult as StatusCodeResult)?.StatusCode 
-                             ?? 0;
-            if (statusCode == 200)
-            {
-                Console.WriteLine("ROTA ARMAZENADA");
-            }
-            else
-            {
-                Console.WriteLine($"\n \n " +
-                                  $"** Metodo causador da exception: ArnazenarRotas \n" +
-                                  $"** Falha ao armazenar rotas, StatusCode: {statusCode} \n " +
-                                  $"Exception: {(ArmazenarRotaResult as ObjectResult)?.Value}" );
-                return StatusCode(400, "Falha ao Armazenar as rotas finais");
-            }
-            
-            
-            
-            return StatusCode(200, "DEU BOM");
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            throw;
-        }
-        
-    }*/
     
     [HttpGet]
     [Route("storeRoutes")]
