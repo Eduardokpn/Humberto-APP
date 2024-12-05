@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wy3vA2je6Y0=",
+  "dgSpecHash": "3dMHo3+oxB4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\eduar\\Documents\\ETEC\\Humberto-APP\\HumbertoMVC.csproj",
+  "projectFilePath": "C:\\Users\\eduar\\Documents\\ETEC\\HUMBERTO\\Humberto-APP\\HumbertoMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eduar\\.nuget\\packages\\geocoding.core\\4.0.1\\geocoding.core.4.0.1.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\geocoding.google\\4.0.1\\geocoding.google.4.0.1.nupkg.sha512",
