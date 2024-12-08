@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HumbertoMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a2c853e2204e8138dc7bf561202ecfd6e05de37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae440aa357bbb84649b9e8d616b7d298e446e1a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("HumbertoMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HumbertoMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

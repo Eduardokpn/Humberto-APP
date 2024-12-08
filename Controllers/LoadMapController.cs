@@ -19,7 +19,7 @@ public class LoadMapController : Controller
     [HttpGet]
     public IActionResult Index()
     {
-        return View("/ViewModel/ExibirMapaViewModel.cshtml");
+        return View("/Views/Home/ExibirView.cshtml");
     }
 
     [Route("GetRouteDetails")]

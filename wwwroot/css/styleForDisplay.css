@@ -6,7 +6,8 @@
 
 .blueCont {
     margin-top: -15px;
-    padding: 0;
+    padding: 10px;
+    padding-bottom: 75px;
     width: 100%;
     height: fit-content;
     background-color: #003acc;
@@ -79,14 +80,16 @@
     margin-top: 225px;
 }
 
-#home {
-    margin: 30px;
-    width: 75px;
-    height: 75px;
+.card {
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    width: 320px;
+    height: 400px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#star {
-    margin: 30px;
-    width: 75px;
-    height: 75px;
+.container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
